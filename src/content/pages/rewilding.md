@@ -1,5 +1,5 @@
 ---
-title: "The rewilding plan"
+title: "How we rewild"
 description: "How we leave recovering land alone and plan a small native tree planting trial on cleared patches in Kampong Seila, Cambodia."
 eyebrow: "Rewilding"
 statement: "Leave what’s recovering. *Test* what isn’t."
@@ -29,7 +29,7 @@ stage:
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia. Parts of it were cleared decades ago. Much of the rest is left alone. Neighbouring farmland stays as it is. We want to see if careful native planting can help the cleared patches that are not recovering.
+We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
 
 ## What is happening now {status=today}
 
@@ -86,7 +86,7 @@ Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subjec
 
 We’d like to talk with organisations that fund or support native tree planting.
 
-What we would agree together: planting support, care in the first years, long-term protection of planted areas, simple reporting, and visits by arrangement.
+We would agree the details together, including care in the first years, how planted areas stay protected, reporting, and visits.
 
 Planting can be done in funded batches, timed to the rainy season.
 

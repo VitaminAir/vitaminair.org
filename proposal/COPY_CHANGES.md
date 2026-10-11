@@ -79,3 +79,12 @@ Kept as they were (already plain and true): the hero statement “Rewilding land
 | Home contact band | (no line for organisations) | If your organisation supports native tree planting, we’d like to talk. (links to /rewilding/#working-together) |
 | Contact reasons list | Planting trial and research first | Planting partnerships (new, first): For organisations that fund or support native tree planting. |
 | Contact meta description | Email VitaminAir about the planting trial, research, supporting the work or the village idea… | Email VitaminAir about planting partnerships, the planting trial, research, supporting the work or the village idea… |
+
+## Rewilding in two ways (owner clarification, 2026-10-11)
+The owner explained that "rewilding" is the accurate word: where forest is growing back, nature is left to reclaim it, and where cleared land needs help, it will be replanted using the Miyawaki method.
+- Home intro and Rewilding opening: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial…"
+- Home approach statement: "Test the rest." became "Help what isn't."
+- "Read the rewilding plan" / "The rewilding plan" became "How we rewild".
+- Working together: the colon list became "We would agree the details together, including care in the first years, how planted areas stay protected, reporting, and visits."
+- Hero headline: interim "Rewilding land in Kampong Seila." The final wording is pending the owner's choice.
+- Footer: added "Design inspired by Itonami Studio." with a link to https://itonami.studio/.

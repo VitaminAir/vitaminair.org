@@ -1,11 +1,11 @@
 ---
-title: "VitaminAir: Rewilding land in Cambodia"
+title: "VitaminAir: Rewilding land in Kampong Seila, Cambodia"
 description: "We look after land in Kampong Seila, Cambodia. Much of it is left to recover. We plan a small native tree planting trial and hope to build a village later."
 hero:
   animate: true
   scenes:
     - name: "Land"
-      caption: "Land we look after in Kampong Seila."
+      caption: "The land we look after."
       status: "today"
     - name: "Recovery"
       caption: "Much of it is left alone to recover."
@@ -19,11 +19,11 @@ hero:
     - name: "Village"
       caption: "A village is a long way off."
       status: "vision"
-  eyebrow: "Kampong Seila · Cambodia"
-  statement: "*Rewilding* land in Cambodia."
-  intro: "We look after land in Kampong Seila, Cambodia. Much of it is recovering, and we leave that alone. On a few cleared patches we want to test native tree planting and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
+  eyebrow: "Cambodia"
+  statement: "*Rewilding* land in Kampong Seila."
+  intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial, and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
   primary:
-    text: "Read the rewilding plan"
+    text: "How we rewild"
     href: "/rewilding/"
   link:
     text: "The village vision"
@@ -43,7 +43,7 @@ land:
       value: "Left undisturbed to recover"
 approach:
   eyebrow: "Our approach"
-  statement: "Leave what is *recovering*. Test the rest."
+  statement: "Leave what is *recovering*. Help what isn’t."
   items:
     - title: "Natural recovery"
       status: "today"
