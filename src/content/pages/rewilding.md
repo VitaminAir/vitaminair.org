@@ -2,7 +2,7 @@
 title: "How we rewild"
 description: "How we leave recovering land alone and plan a small native tree planting trial on cleared patches in Kampong Seila, Cambodia."
 eyebrow: "Rewilding"
-statement: "Leave what’s recovering. *Test* what isn’t."
+statement: "Leave it be. *Replant* where needed."
 image: "/images/dry-season-2020.jpg"
 imageAlt: "A small open shelter in dry grass, with a forested hill and a thin line of smoke behind it"
 tag: ""
@@ -35,7 +35,7 @@ We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where 
 
 Much of the land is being left alone. Around 2020 and 2021 we saw parts of it recovering without any planting. So where nature is already doing the work, we stay out of the way. That will not be true of every cleared patch, so we also want to test planting.
 
-![The same hill in 2020, bare and burnt with red soil, and in 2024, green and recovering](/images/hill-2020-2024.jpg "The same hill in 2020 and 2024, seen from VitaminAir. Left alone.")
+![The same hill in 2020, bare and burnt with red soil, and in 2024, green and recovering](/images/hill-2020-2024.jpg "The same hill on the land, 2020 and 2024. Left alone.")
 
 ::: pair
 ![A small building almost hidden by young trees](/images/reclaimed-2023-a.jpg)

@@ -2,7 +2,7 @@
 title: "Contact"
 description: "Email VitaminAir about planting partnerships, the planting trial, research, supporting the work or the village idea. Visits are by arrangement only."
 eyebrow: "Contact"
-statement: "Get in *touch*."
+statement: "Write to us. *Visit* by arrangement."
 stage:
   scene: "land"
   seed: 2

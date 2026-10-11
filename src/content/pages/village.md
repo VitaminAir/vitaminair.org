@@ -1,8 +1,8 @@
 ---
-title: "A village, one day"
+title: "Forest first, a village later"
 description: "A long-term idea for a place in Kampong Seila, Cambodia where people could live, work, grow food and look after the forest. Not built, not on offer."
 eyebrow: "Long-term vision"
-statement: "A village, *one day*."
+statement: "Forest first. A village, *later*."
 status: "vision"
 stage:
   scene: "village"

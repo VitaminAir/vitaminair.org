@@ -43,7 +43,7 @@ land:
       value: "Left undisturbed to recover"
 approach:
   eyebrow: "Our approach"
-  statement: "Leave what is *recovering*. Help what isn’t."
+  statement: "Watch first. *Plant* only where it helps."
   items:
     - title: "Natural recovery"
       status: "today"
@@ -68,7 +68,7 @@ learn:
 village:
   eyebrow: "The village"
   status: "vision"
-  statement: "A village, *one day*."
+  statement: "Forest first. A village, *later*."
   text: "We would like to build a village here one day, where people can live, work, grow food and look after the forest. We don’t know yet what it would look like. The forest comes first."
   linkText: "Read about the village idea"
 journal:
@@ -76,9 +76,9 @@ journal:
   heading: "Journal"
   desc: "Notes, stories and older pieces."
 contact:
-  statement: "Get in *touch*."
+  statement: "Write to us. *Visit* by arrangement."
   text: "If you have a question about the planting, the research or the village idea, email us."
   org: "If your organisation supports native tree planting, [we’d like to talk](/rewilding/#working-together)."
-  note: "Visits by arrangement."
+  note: "Email is the best way to reach us."
   subject: "Hello from the website"
 ---

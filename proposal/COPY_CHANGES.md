@@ -88,3 +88,17 @@ The owner explained that "rewilding" is the accurate word: where forest is growi
 - Working together: the colon list became "We would agree the details together, including care in the first years, how planted areas stay protected, reporting, and visits."
 - Hero headline: "Let nature *reclaim*. Rewild where needed." (owner's wording), with the eyebrow back to "Kampong Seila · Cambodia".
 - Footer: added "Design inspired by Itonami Studio." with a link to https://itonami.studio/.
+
+## Statements in the headline's style (owner, 2026-10-11)
+The style is two short, plain beats, each true, with one accent word.
+
+| Where | Before | After |
+|---|---|---|
+| Home approach band | Leave what is recovering. Help what isn't. | Watch first. *Plant* only where it helps. |
+| Home village and Village page | A village, one day. | Forest first. A village, *later*. |
+| Village page title | A village, one day | Forest first, a village later |
+| Home contact and Contact page | Get in touch. | Write to us. *Visit* by arrangement. |
+| Home contact note | Visits by arrangement. | Email is the best way to reach us. |
+| Rewilding page | Leave what's recovering. Test what isn't. | Leave it be. *Replant* where needed. |
+| Journal page | Notes, stories and older pieces. | Notes from the land. *Older* stories too. |
+| Rewilding hill caption | The same hill in 2020 and 2024, seen from VitaminAir. Left alone. | The same hill on the land, 2020 and 2024. Left alone. |

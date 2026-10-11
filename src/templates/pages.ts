@@ -46,7 +46,7 @@ export function journalPage(journal: Article[], build: BuildInfo, showDrafts: bo
       return `<section aria-labelledby="y${y}"><h2 class="year" id="y${y}">${y}</h2><ul class="rows rows--links">${items.map(entryRow).join('')}</ul></section>`;
     })
     .join('\n');
-  const main = `${pageStage({ eyebrow: 'Journal', statement: 'Notes, stories and *older* pieces.', cfg: { scene: 'land', seed: 1 }, scenes })}
+  const main = `${pageStage({ eyebrow: 'Journal', statement: 'Notes from the land. *Older* stories too.', cfg: { scene: 'land', seed: 1 }, scenes })}
 <div class="container journal-wrap">
 ${groups || '<p class="empty">No entries yet. New notes will appear here when we publish them.</p>'}
 ${legendDetails('legend--journal')}
