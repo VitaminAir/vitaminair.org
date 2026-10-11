@@ -22,7 +22,7 @@ export const site = {
   partners: [
     { name: 'KOOMPI', url: 'https://koompi.com/' },
     { name: 'SmallWorld', url: 'https://smallworld.xyz/' },
-    { name: 'StadiumX' },
+    { name: 'StadiumX', url: 'https://stadiumx.asia/' },
   ] as { name: string; url?: string }[],
   nav: [
     { name: 'Rewilding', path: '/rewilding/' },
