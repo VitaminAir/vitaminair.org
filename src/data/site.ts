@@ -42,7 +42,7 @@ export const facts = {
   cleared: 'Around 30–40 hectares',
   clearedWhen: '20–30 years ago',
   pilotArea: '1–2 hectares',
-  pilotSaplings: 'around 10,000',
+  pilotSaplings: 'around 30,000',
   pilotMethod: 'Miyawaki, diverse native species',
   planted: 'About 12 hectares, by hand',
   plantedWhen: 'since 2020',
