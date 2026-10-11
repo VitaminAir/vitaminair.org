@@ -489,3 +489,22 @@ figcaption { font-size: .86rem; color: var(--ink-soft); margin-top: 8px; line-he
 @media (min-width: 560px) { .pair-imgs { grid-template-columns: 1fr 1fr; } }
 .pair-imgs img { width: 100%; height: auto; display: block; }
 .reading figure img { max-width: 100%; height: auto; display: block; }
+
+/* small screens (same query as the menu): calm first screen. Art, eyebrow, headline, scroll cue; the CTA row moves below the intro. */
+.actions--after { display: none; }
+@media (max-width: 759px), (max-height: 480px) and (max-width: 960px) {
+  .stage:not(.stage--page) .stage-bar, .stage-hint, .stage-ctl, .stage-cap-t { display: none; }
+  .stage--page .stage-bar { margin-top: -6px; }
+  .stage .actions--hero { display: none; }
+  .actions--after { display: flex; margin-top: 28px; }
+  .stage-cue path { animation: none; opacity: .6; }
+}
+@media (max-height: 480px) and (max-width: 960px) { .stage-cue { display: grid; } }
+
+/* Hero headline: two sentences on exactly two lines (a <br> between them, no other wrapping).
+   The size is set from the text column width so the longer line (about 8.8em) always fits:
+   full container width when stacked, minus the scene bar and gap when side by side. */
+:root { --hero-tw: min(100vw - 2 * var(--gutter), var(--maxw)); }
+.stage .statement--hero { max-width: none; white-space: nowrap; font-size: clamp(1.6rem, min(calc(var(--hero-tw) / 10.2), 9vh), 6.8rem); }
+@media (min-width: 1100px) { .stage .statement--hero { font-size: clamp(1.6rem, min(calc((var(--hero-tw) - 25rem - 40px) / 9.6), 9vh), 6.8rem); } }
+@media (min-width: 961px) and (max-width: 1099px) and (max-height: 480px) { .stage .statement--hero { font-size: clamp(1.6rem, min(calc((var(--hero-tw) - 16rem - 40px) / 9.6), 9vh), 6.8rem); } }

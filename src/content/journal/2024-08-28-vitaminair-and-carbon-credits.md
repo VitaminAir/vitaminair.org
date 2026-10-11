@@ -11,6 +11,9 @@ tags: ["Posts", "Projects"]
 legacyCategory: "Forestry and Nature"
 author: "CD Bella"
 featured: true
+image: "/blog/content/images/va-1207.jpg"
+imageAlt: "Children and an adult playing a ball game on a dirt clearing, with trees and a small house behind"
+imageCaption: "Archive photo."
 canonical: "/blog/2024/08/vitaminair-and-carbon-credits"
 sourceFile: "2024-08-28-14-58-52_posts,projects_vitaminair-and-carbon-credits.md"
 ---

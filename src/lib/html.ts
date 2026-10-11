@@ -17,12 +17,12 @@ export function esc(s: unknown): string {
 export function statement(text: string): string {
   return esc(text).replace(/\*([^*]+)\*([.,;:!?]?)/g, (_m, w: string, punct: string) =>
     punct ? `<span class="nw"><em class="mark">${w}</em>${punct}</span>` : `<em class="mark">${w}</em>`,
-  );
+  ).replace(/\s*\n\s*/g, '<br>');
 }
 
 /** Plain-text version of a statement (for titles, descriptions). */
 export function plain(text: string): string {
-  return text.replace(/\*([^*]+)\*/g, '$1');
+  return text.replace(/\*([^*]+)\*/g, '$1').replace(/\s*\n\s*/g, ' ');
 }
 
 export function label(key: StatusKey, extraClass = ''): string {

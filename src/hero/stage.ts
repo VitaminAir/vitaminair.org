@@ -162,6 +162,8 @@ if (root && dataEl && canvas) {
   const numEl = $('.stage-n'), nameEl = $('.stage-name'), capEl = $('.stage-cap-t'), chip = $('.stage-chip');
   const mq = (q: string) => matchMedia(q);
   const rmq = mq('(prefers-reduced-motion: reduce)');
+  // small screens (same query as the menu): calm first screen, draw in once, no autoplay, no swipe, no idle motion
+  const small = mq('(max-width: 759px), (max-height: 480px) and (max-width: 960px)');
   const store = (k: string, v?: string) => { try { if (v !== undefined) sessionStorage.setItem(k, v); return sessionStorage.getItem(k); } catch { return null; } };
 
   let cw = 0, ch = 0, dpr = 1, u = 1;
@@ -291,7 +293,7 @@ if (root && dataEl && canvas) {
   }
 
   const fxAlive = () => ck < growUntil || wind || D.rip.length > 0 || D.lv.length > 0 || D.gl.length > 0 || D.tr.length > 0 || Math.abs(bt * str - ba) > 0.01;
-  const moving = () => !reduced() && !paused && inView && !document.hidden && (!page || cur > 0 || t < 2800);
+  const moving = () => !reduced() && !paused && inView && !document.hidden && (small.matches ? t < 2800 : !page || cur > 0 || t < 2800);
   const canRun = () => inView && !document.hidden;
 
   function setText() {
@@ -316,7 +318,7 @@ if (root && dataEl && canvas) {
     const a0 = fxAlive(), anim = t < 2800 || tr < 760;
     if (moving()) {
       t += dt; tr += dt;
-      if (!page && t >= 6400 && ck - lastI >= 4000) { go(cur + 1, false); return; }
+      if (!page && !small.matches && t >= 6400 && ck - lastI >= 4000) { go(cur + 1, false); return; }
     }
     ba += (bt * str - ba) * Math.min(1, dt / 130);
     vx *= Math.exp(-dt / 160);
@@ -342,7 +344,7 @@ if (root && dataEl && canvas) {
     D.rip = D.rip.filter((r) => { const p = (ck - r.t) / 3000; r.R = Math.hypot(cw, ch) * 0.4 * (1 - (1 - Math.min(p, 1)) ** 2); r.f = (1 - Math.min(p, 1)) ** 1.5; return p < 1; });
     D.lv = D.lv.filter((l) => ck - l.s < 2500);
     D.gl = D.gl.filter((g) => ck - g.t < 1400);
-    amb = moving() && cur >= 1;
+    amb = moving() && cur >= 1 && !small.matches;
     ambAcc += dt;
     if (a0 || fxAlive() || anim || (amb && (cur < 3 || ambAcc >= 33))) { render(); ambAcc = 0; }
     if (moving() || fxAlive()) raf = requestAnimationFrame(tick);
@@ -409,7 +411,7 @@ if (root && dataEl && canvas) {
     const dx = px - sx, dy = py - sy, dur = e.timeStamp - st0;
     if (touch) { bt = 0; pa = false; }
     if (!cancel) {
-      if (!page && touch && dur < 900 && Math.abs(dx) >= Math.max(48, cw * 0.12) && Math.abs(dx) > 1.15 * Math.abs(dy)) {
+      if (!page && !small.matches && touch && dur < 900 && Math.abs(dx) >= Math.max(48, cw * 0.12) && Math.abs(dx) > 1.15 * Math.abs(dy)) {
         if (gp) D.sa.splice(-gp, gp);
         go(cur + (dx < 0 ? 1 : -1), instant() || paused); lastI = ck; return;
       }
@@ -424,7 +426,7 @@ if (root && dataEl && canvas) {
   // ---- hint ----
   let hintDone = false, hintT = 0;
   function hint() {
-    if (hintDone || !inView || !hintEl) return;
+    if (hintDone || !inView || !hintEl || small.matches) return;
     const r = reduced();
     if (r && cur != 2) return;
     if (store('va-hint')) { hintDone = true; return; }
@@ -473,5 +475,6 @@ if (root && dataEl && canvas) {
   document.addEventListener('visibilitychange', () => kick());
   let rt = 0;
   new ResizeObserver(() => { clearTimeout(rt); rt = window.setTimeout(() => { size(); kick(); }, 150); }).observe(root);
+  small.addEventListener('change', () => { if (small.matches && !page && cur) go(0, true); kick(); });
   rmq.addEventListener('change', () => { if (pauseB) pauseB.hidden = reduced(); if (reduced()) { t = tr = 1e9; prev = -1; } render(); kick(); });
 }

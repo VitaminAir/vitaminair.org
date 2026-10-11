@@ -31,6 +31,7 @@ export function homePage(d: Record<string, any>, journal: Article[], build: Buil
 <p class="stage-scene"><span class="stage-n">01</span> · <span class="stage-name">${esc(scene1.name)}</span></p>
 <p class="stage-cap"><span class="stage-cap-t">${esc(scene1.caption)}</span> ${label(scene1.status, 'stage-chip')}</p>
 ${animate ? ctl : ''}</div>`;
+  const cta = `${btnPrimary(H.primary.text, H.primary.href)}<a class="text-link" href="${esc(H.link.href)}">${esc(H.link.text)}</a>`;
   const hero = `<section class="stage" aria-labelledby="hero-h">
 ${stageSvg('stage-svg', 1440, 900, 0)}
 ${animate ? '<canvas class="stage-canvas" aria-hidden="true"></canvas>' : ''}
@@ -39,7 +40,7 @@ ${animate ? '<canvas class="stage-canvas" aria-hidden="true"></canvas>' : ''}
 <div class="stage-text">
 ${eyebrow(H.eyebrow)}
 <h1 id="hero-h" class="statement statement--hero">${statement(H.statement)}</h1>
-<p class="actions">${btnPrimary(H.primary.text, H.primary.href)}<a class="text-link" href="${esc(H.link.href)}">${esc(H.link.text)}</a></p>
+<p class="actions actions--hero">${cta}</p>
 </div>
 ${bar}
 </div>
@@ -48,6 +49,7 @@ ${bar}
 ${edge('down', 30)}
 <section id="intro" class="hero-after container rv">
 <p class="intro" data-rv>${esc(H.intro)}</p>
+<p class="actions actions--after">${cta}</p>
 </section>
 <div class="container">${divider(1)}</div>${animate ? `
 <script type="application/json" id="stage-data">${sceneJson}</script>` : ''}`;
