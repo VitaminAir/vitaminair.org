@@ -1,6 +1,6 @@
 ---
 title: "How we rewild"
-description: "How we leave recovering land alone and plan a small native tree planting trial on cleared patches in Kampong Seila, Cambodia."
+description: "How we leave recovering land alone, what we have planted since 2020, what fire has done to it, and the small planting we plan next in Kampong Seila."
 eyebrow: "Rewilding"
 statement: "Leave it be. *Replant* where needed."
 image: "/images/dry-season-2020.jpg"
@@ -14,26 +14,27 @@ glance:
       value: "{{facts.landArea}}"
     - label: "Cleared {{facts.clearedWhen}}"
       value: "{{facts.cleared}}"
-    - label: "Pilot area"
-      value: "{{facts.pilotArea}}"
+    - label: "Planted {{facts.plantedWhen}}"
+      status: "today"
+      value: "{{facts.planted}}"
+    - label: "Fire"
+      value: "Burned through it several times since 2021"
+    - label: "Next planting"
+      status: "planned"
+      value: "Miyawaki, {{facts.pilotArea}} to start"
     - label: "Saplings, initial target"
       value: "{{facts.pilotSaplings}}"
-    - label: "Method"
-      value: "{{facts.pilotMethod}}"
-    - label: "Status"
-      status: "planned"
-      value: "{{facts.pilotFunding}}"
 stage:
   scene: "planting"
   seed: 3
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
+We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to try the Miyawaki method on one small patch. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
 
 ## What is happening now {status=today}
 
-Much of the land is being left alone. Around 2020 and 2021 we saw parts of it recovering without any planting. So where nature is already doing the work, we stay out of the way. That will not be true of every cleared patch, so we also want to test planting.
+Much of the land is being left alone. Around 2020 and 2021 we saw parts of it recovering without any planting. So where nature is already doing the work, we stay out of the way. That will not be true of every cleared patch, so we also plant.
 
 ![The same hill in 2020, bare and burnt with red soil, and in 2024, green and recovering](/images/hill-2020-2024.jpg "The same hill on the land, 2020 and 2024. Left alone.")
 
@@ -43,24 +44,26 @@ Much of the land is being left alone. Around 2020 and 2021 we saw parts of it re
 After four months without people, June 2023.
 :::
 
-## What we planted before {status=today}
+## What we have planted {status=today}
 
-Starting in November 2020, about 12 hectares were planted by hand with a partner. By January 2021 at least nine in ten of the first trees were alive. Then, in March 2021, a dry-season fire burned about a fifth of the site. Fire has gone through the planted area a few times since. [The full story](/blog/2021/03/planting-and-fire/) is in the journal. Any new planting has to plan for fire first.
+Starting in November 2020, about 12 hectares were planted by hand with a partner. Parts were planted close together, but it was not the full Miyawaki method. By January 2021 at least nine in ten of the first trees were alive. Then, in March 2021, a dry-season fire burned about a fifth of the site. Fire has gone through the planted area a few times since. [The full story](/blog/2021/03/planting-and-fire/) is in the journal.
 
-## The planting trial we’re planning {status=planned}
+In June 2024 we planted [54 young trees](/blog/2024/06/fifty-four-trees/) close together, as a very small forest, next to a patch that had burned that April. It is small next to what one afternoon of fire can do. Any new planting has to plan for fire first.
 
-We plan a planting trial on a pilot area of {{facts.pilotArea}}, with {{facts.pilotSaplings}} native saplings as an initial target. We would use the Miyawaki method: many native species, planted close together. The species, layout and costs are still being worked out. The trial is not yet funded.
+## What we plan next {status=planned}
+
+Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of cleared land, with {{facts.pilotSaplings}} native saplings as an initial target: many native species, planted close together. The species, layout, fire protection and costs are still being worked out.
 
 **Still to work out**
 
 - Which native species, and where the saplings come from
 - Exactly where the pilot goes, and how dense the planting should be
-- Who looks after it, especially through the first dry season
+- How to keep fire out, and who looks after it through the first dry seasons
 - What it all costs
 
 ## What we’ll record
 
-We are starting with one small plot, by hand, and writing down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
+The next planting starts with one small plot, by hand, and we will write down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
 
 ## After the pilot
 
@@ -70,7 +73,7 @@ If the pilot teaches us enough, we may plant more of the cleared areas. We have 
 
 ::: rows
 
-### Is the trial funded?
+### Is the next planting funded?
 
 Not yet. We are talking to possible collaborators, but nothing is confirmed.
 
@@ -98,4 +101,4 @@ Species, costs and capacity are still being worked out. We’ll share them when 
 
 [Discuss a planting partnership](mailto:info@vitaminair.org?subject=Planting%20partnership){.btn-primary}
 
-If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting trial](mailto:info@vitaminair.org?subject=Planting%20trial).
+If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting](mailto:info@vitaminair.org?subject=Planting).

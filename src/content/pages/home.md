@@ -1,6 +1,6 @@
 ---
 title: "VitaminAir: Rewilding land in Kampong Seila, Cambodia"
-description: "We look after land in Kampong Seila, Cambodia. Much of it is left to recover. We plan a small native tree planting trial and hope to build a village later."
+description: "We look after land in Kampong Seila, Cambodia. Much of it is left to recover. About 12 hectares have been planted since 2020, and fire is the hard part."
 hero:
   animate: true
   scenes:
@@ -11,17 +11,17 @@ hero:
       caption: "Much of it is left alone to recover."
       status: "today"
     - name: "Planting"
-      caption: "We plan to try native planting on one small plot."
-      status: "planned"
+      caption: "About 12 hectares planted by hand since 2020."
+      status: "today"
     - name: "Canopy"
-      caption: "What the plot might look like in some years."
+      caption: "What planted land might look like in some years."
       status: "vision"
     - name: "Village"
       caption: "A village is a long way off."
       status: "vision"
   eyebrow: "Kampong Seila · Cambodia"
   statement: "Let nature *reclaim*.\nRewild where needed."
-  intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial, and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
+  intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to try the Miyawaki method on one small patch and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
   primary:
     text: "How we rewild"
     href: "/rewilding/"
@@ -48,9 +48,12 @@ approach:
     - title: "Natural recovery"
       status: "today"
       body: "Some areas are already recovering. What we saw in 2020 and 2021 is why we leave them alone."
-    - title: "Native planting trial"
+    - title: "Planting by hand"
+      status: "today"
+      body: "About 12 hectares planted since 2020, not fully the Miyawaki method. Fire has set much of it back."
+    - title: "Miyawaki on a small patch"
       status: "planned"
-      body: "We want to try Miyawaki-style planting with native species on one small cleared plot. We will start small and see what survives."
+      body: "Next, dense native planting on one small cleared patch, planned around fire from the start."
 learn:
   eyebrow: "What we want to learn"
   status: "planned"

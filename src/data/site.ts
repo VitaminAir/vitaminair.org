@@ -44,7 +44,8 @@ export const facts = {
   pilotArea: '0.25–0.5 hectare',
   pilotSaplings: 'around 10,000',
   pilotMethod: 'Miyawaki, diverse native species',
-  pilotFunding: 'Not yet funded',
+  planted: 'About 12 hectares, by hand',
+  plantedWhen: 'since 2020',
   location: 'Kampong Seila, Cambodia',
   partners: partnerList(true), // Markdown line with links, for page bodies
 };
