@@ -10,7 +10,7 @@ Owner direction (2026-10-11): humble, heads down, truthful. Close to stoic. Talk
 
 ## Facts and names
 - **Location:** Kampong Seila, Cambodia.
-- **Land:** "the land we look after" or "the land". Never "bought", "own", "acquired" or "our property". The size, "almost 100 hectares", appears once as a plain fact on the Rewilding page (an "About the land" row). It never appears in the hero, headings, page descriptions or social previews.
+- **Land:** "the land we look after" or "the land". Never "bought", "own", "acquired" or "our property". The size, "around 80 hectares", appears once as a plain fact on the Rewilding page (an "About the land" row). It never appears in the hero, headings, page descriptions or social previews.
 - **Partners:** KOOMPI, SmallWorld and StadiumX. List them as plain names ("Working with KOOMPI, SmallWorld and StadiumX."). No logos, and no descriptions of what each does until the owner confirms. Balance.eco and ISI remain unnamed (exploratory).
 - **Tree names** follow `src/art/trees.ts`.
 
@@ -46,7 +46,7 @@ Owner direction (2026-10-11): humble, heads down, truthful. Close to stoic. Talk
 4. Would we say it out loud to someone visiting the land?
 
 ## Examples
-- **No:** "We bought almost 100 hectares to restore Cambodia's forests and build a sustainable future."
+- **No:** "We bought around 80 hectares to restore Cambodia's forests and build a sustainable future."
 - **Yes:** "We look after land in Kampong Seila, Cambodia. Most of it is recovering on its own, and we leave that alone. On a few cleared patches we want to test careful native planting and write down what happens."
 
 - **No:** "Join us on our journey to heal the land!"

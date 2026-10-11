@@ -47,5 +47,5 @@ export function heroStatement(text: string, level: 'h1' | 'h2', cls: string): st
 }
 
 export function figureWithBar(src: string, imgHtml: string, tag: string, caption: string): string {
-  return `<figure class="photo">${imgHtml}<figcaption><span class="cap-tag">${esc(tag)}</span><span class="cap-text">${esc(caption)}</span></figcaption></figure>`;
+  return `<figure class="photo">${imgHtml}<figcaption>${tag ? `<span class="cap-tag">${esc(tag)}</span>` : ''}<span class="cap-text">${esc(caption)}</span></figcaption></figure>`;
 }

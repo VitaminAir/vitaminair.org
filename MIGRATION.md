@@ -21,9 +21,9 @@ Each migrated file keeps `sourceFile`, original `tags`, `legacyCategory` and (wh
 ## Images
 | Original | Decision |
 |---|---|
-| mountain.jpg (photo) | Used: homepage "land today", Red Moon Valley and Reconnecting articles. Captioned as archive photo, not the trial plot. |
-| sunset-strip.jpg (photo) | Used: Rewilding banner and articles that referenced it. Same caveat. |
-| va-1207.jpg (photo of children) | Not used on any public page and not copied to `public/`. Carbon article keeps it only as `legacyImage` metadata (not displayed) until consent is confirmed. |
+| mountain.jpg (photo) | Used: Red Moon Valley and Reconnecting articles only (Home now uses a real photo of the land). Captioned as archive photo, not the trial plot. |
+| sunset-strip.jpg (photo) | Used: the articles that referenced it (Rewilding now uses a real photo of the land). Same caveat. |
+| va-1207.jpg (photo of children) | Not used and deleted from `proposal/images/` (2026-10-11). The `legacyImage` line was removed from the carbon article. Still in `source-archive/`. |
 | leaders.png (stock illustration) | Not used and not copied. The only article that referenced it is a draft. |
 Optimised copies of the used images are in `public/images/` (jpg + webp). Originals: `source-archive/images-original/`.
 

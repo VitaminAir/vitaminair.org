@@ -29,7 +29,8 @@ function makeMarked(): Marked {
           inner = inner.replace(STATUS_SUFFIX, '');
           chip = ' ' + label(mt[1] as StatusKey);
         }
-        return `<h${depth}>${inner}${chip}</h${depth}>\n`;
+        const id = depth === 2 ? ` id="${inner.replace(/<[^>]*>/g, '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}"` : '';
+        return `<h${depth}${id}>${inner}${chip}</h${depth}>\n`;
       },
       paragraph(this: any, { tokens }: Tokens.Paragraph) {
         const nonSpace = tokens.filter((t) => !(t.type === 'text' && !t.raw.trim()));
@@ -90,18 +91,31 @@ function renderNote(inner: string): string {
   return `<aside class="note note--block">${marked.parse(inner) as string}</aside>\n`;
 }
 
+/** `::: pair` ... `:::`: two images (one `![alt](src)` per line) and a caption line, shown side by side when there is room. */
+function renderPair(inner: string): string {
+  const imgs: string[] = [];
+  const rest: string[] = [];
+  for (const line of inner.split('\n')) {
+    const m = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/.exec(line.trim());
+    if (m) imgs.push(imgTag(m[2], m[1]));
+    else if (line.trim()) rest.push(line.trim());
+  }
+  const cap = rest.length ? `<figcaption>${marked.parseInline(rest.join(' ')) as string}</figcaption>` : '';
+  return `<figure class="pair"><div class="pair-imgs">${imgs.join('')}</div>${cap}</figure>\n`;
+}
+
 export function renderMarkdown(src: string): string {
   // `[Text](url){.btn-primary}` marks the page's one primary button.
   const text = interpolate(src)
     .replace(/\r\n/g, '\n')
     .replace(/\]\(([^)\s]+)\)\{\.btn-primary\}/g, `](\$1 "${BTN_TITLE}")`);
   const out: string[] = [];
-  const re = /^:::\s*(rows|items|note)\s*\n([\s\S]*?)^:::\s*$/gm;
+  const re = /^:::\s*(rows|items|note|pair)\s*\n([\s\S]*?)^:::\s*$/gm;
   let last = 0;
   let mt: RegExpExecArray | null;
   while ((mt = re.exec(text))) {
     out.push(marked.parse(text.slice(last, mt.index)) as string);
-    out.push(mt[1] === 'rows' ? renderRows(mt[2]) : mt[1] === 'items' ? renderItems(mt[2]) : renderNote(mt[2]));
+    out.push(mt[1] === 'rows' ? renderRows(mt[2]) : mt[1] === 'items' ? renderItems(mt[2]) : mt[1] === 'pair' ? renderPair(mt[2]) : renderNote(mt[2]));
     last = re.lastIndex;
   }
   out.push(marked.parse(text.slice(last)) as string);

@@ -1,6 +1,6 @@
 import { site, facts, labels, type StatusKey } from '../data/site.ts';
 import { esc, label, statement, note, imgTag, mailto, btnPrimary } from '../lib/html.ts';
-import { renderMarkdown } from '../lib/markdown.ts';
+import { renderMarkdown, renderInline } from '../lib/markdown.ts';
 import type { Article } from '../lib/content.ts';
 import { layout, type BuildInfo } from './layout.ts';
 import { stageSvg, fieldSvg, divider, edge, frameLines, villageArt, bandTrees } from './art.ts';
@@ -132,6 +132,7 @@ ${fieldSvg('contact-mark', 1200, 560, 3, '#3F6E55', 0.1, 14, 11)}
 </div>
 <div class="contact-body" data-rv>
 <p>${esc(C.text)}</p>
+<p>${renderInline(C.org)}</p>
 <p class="big"><a href="${esc(mailto(C.subject))}">${esc(site.email)}</a></p>
 <p>${esc(C.note)}</p>
 </div>

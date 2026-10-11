@@ -3,7 +3,7 @@
 Everything below needs a rebuild to show on the site: run `npm run build` and upload `dist/`. Use `npm run dev` to preview while editing.
 
 ## Change a fact
-Edit `src/data/site.ts`: `facts` (land figures, pilot size), `status` and `labels` (label wording), `site` (email, map link, socials, partners, nav). Partners are plain names; add a `url` to link one. `{{facts.partners}}` prints the "Working with ..." line with links, and the footer shows it on every page. The land size appears once, in the Rewilding "At a glance" list, and should stay out of headings, descriptions and social previews. Tone for all copy is in `proposal/VOICE.md`. In Markdown, write `{{facts.landArea}}` (or `{{facts.landArea|lower}}` for "almost 100 hectares") and the value is filled in at build time. Fact text written in plain prose is not updated automatically, so use the placeholder wherever a figure appears.
+Edit `src/data/site.ts`: `facts` (land figures, pilot size), `status` and `labels` (label wording), `site` (email, map link, socials, partners, nav). Partners are plain names; add a `url` to link one. `{{facts.partners}}` prints the "Working with ..." line with links, and the footer shows it on every page. The land size appears once, in the Rewilding "At a glance" list, and should stay out of headings, descriptions and social previews. Tone for all copy is in `proposal/VOICE.md`. In Markdown, write `{{facts.landArea}}` (or `{{facts.landArea|lower}}` for "around 80 hectares") and the value is filled in at build time. Fact text written in plain prose is not updated automatically, so use the placeholder wherever a figure appears.
 
 ## Edit a page
 - Home: `src/content/pages/home.md`. The front matter holds the headings, captions and items for each section: `hero.scenes` (five entries, each `name`, `caption`, `status` of today | planned | vision: the text and honest label shown on the animated hero), `hero.animate` (`false` turns the animation off and leaves a static picture), `hero.primary` (the one primary button) and `hero.link`, `approach.items` (two visible items, each with `status`), `learn.items` (visible term + sentence), `contact.subject` (email subject). Put `*asterisks*` round the one accent word in a statement.
@@ -30,7 +30,14 @@ Every page and post needs a `<meta description>` of 120-160 characters, and the 
 Front matter: `title`, `date`, `description`, `type` (article | update | story | reflection), `status` (published | draft) are required. Optional: `archive: true`, `note`, `tags`, `author` (only confirmed bylines), `image` + `imageAlt` (+ `imageCaption`), `featured: true` (homepage list shows the 5 most recent featured), `metaDescription`, `canonical` (keep an existing URL). A wrong value fails the build with a message naming the file.
 
 ## Replace an image
-Put the optimised file in `public/images/` (keep the name to replace it, or use a new name and update the reference). Always give alt text. Photos on the homepage and Rewilding page are set in the front matter of `home.md` / `rewilding.md`. The archive photos are not the trial plot, so keep their caption tag unless a real trial photo replaces them.
+Put the optimised file in `public/images/` (keep the name to replace it, or use a new name and update the reference). Always give alt text. Photos on the homepage and Rewilding page are set in the front matter of `home.md` / `rewilding.md`. Images in use (all in `public/images/`, jpg + webp, 800px wide, from the owner's public Telegram channel unless noted):
+- `land-nov-2023.jpg`: Home "The land today" and the default social image (`site.ogImage`).
+- `dry-season-2020.jpg`: Rewilding top photo (April 2020).
+- `hill-2020-2024.jpg`: Rewilding, "What is happening now" (the 2020 and 2024 composite).
+- `reclaimed-2023-a.jpg`, `reclaimed-2023-b.jpg`: Rewilding, shown as a pair with `::: pair` (two image lines and a caption line).
+- `stream-nov-2023.jpg`: optimised but not used yet.
+- `mountain.jpg`, `sunset-strip.jpg`: archive photos, used only on journal articles, captioned "Archive photo, not the trial plot".
+Do not display more than the image's own width (800px). `tag:` in front matter is optional; leave it empty for a real photo of the land, and keep "not the trial plot" wherever a reader could mistake a photo for the trial plot.
 
 ## Change status
 - Draft to published or back: edit `status` in the post.

@@ -32,10 +32,10 @@ land:
   eyebrow: "The land today"
   status: "today"
   heading: "Most of it is left alone."
-  image: "/images/mountain.jpg"
-  alt: "Two people walking through tall grass toward a forested hill"
-  tag: "Archive photo · Not the trial plot"
-  caption: "Grassland and forest, from our archive."
+  image: "/images/land-nov-2023.jpg"
+  alt: "Short green grass and scattered trees under a blue sky, with a forested hill in the distance"
+  tag: ""
+  caption: "The land, November 2023."
   facts:
     - label: "Cleared"
       value: "Parts, {{facts.clearedWhen}}"
@@ -78,6 +78,7 @@ journal:
 contact:
   statement: "Get in *touch*."
   text: "If you have a question about the planting, the research or the village idea, email us."
+  org: "If your organisation supports native tree planting, [we’d like to talk](/rewilding/#working-together)."
   note: "Visits by arrangement."
   subject: "Hello from the website"
 ---

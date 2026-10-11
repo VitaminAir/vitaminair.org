@@ -13,7 +13,6 @@ author: "CD Bella"
 featured: true
 canonical: "/blog/2024/08/vitaminair-and-carbon-credits"
 sourceFile: "2024-08-28-14-58-52_posts,projects_vitaminair-and-carbon-credits.md"
-legacyImage: "https://vitaminair.org/blog/content/images/va-1207.jpg"
 ---
 
 Carbon credits are a key tool in global efforts to combat climate change. They represent a reduction of greenhouse gases, measured in metric tons of carbon dioxide equivalent (CO2e), that can be traded in the carbon market. For each metric ton of CO2 that a project sequesters or avoids, a carbon credit is issued. These credits can then be sold to companies or individuals looking to offset their carbon emissions, providing financial incentives for sustainable practices.

@@ -10,8 +10,8 @@ export const site = {
     'Land in Kampong Seila, Cambodia, mostly left to recover. A small native tree planting trial is planned. A village is a long-term hope, not an offer.',
   email: 'info@vitaminair.org',
   mapUrl: 'https://maps.app.goo.gl/gitGrar6EdW5U5cu5',
-  ogImage: '/images/mountain.jpg',
-  ogImageAlt: 'Two people walking through tall grass toward a forested hill. An archive photo, not the trial plot.',
+  ogImage: '/images/land-nov-2023.jpg',
+  ogImageAlt: 'Green grass and scattered trees with a forested hill behind them, on the land in Kampong Seila, November 2023.',
   socials: [
     { name: 'Telegram', url: 'https://t.me/vitaminair' },
     { name: 'Facebook', url: 'https://www.facebook.com/VitaminAirHome' },
@@ -38,7 +38,7 @@ const partnerList = (md: boolean) => {
 };
 
 export const facts = {
-  landArea: 'Almost 100 hectares',
+  landArea: 'Around 80 hectares',
   cleared: 'Around 30–40 hectares',
   clearedWhen: '20–30 years ago',
   pilotArea: '0.25–0.5 hectare',

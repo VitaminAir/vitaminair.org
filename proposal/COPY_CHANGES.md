@@ -65,3 +65,17 @@ Kept as they were (already plain and true): the hero statement “Rewilding land
 ## Follow-up edits (review pass)
 - Village, explore items: each item opened with "We want to explore…". They are now short noun phrases under the h2 "Things we want to explore" (for example "Collecting and keeping water through the wet and dry seasons."). The LONG-TERM VISION label already sets their status.
 - Village body: removed the repeated "The forest comes first.", because the next paragraph already says the village would only come once forest recovery is going well.
+
+## Owner decisions and real photos (2026-10-11)
+| Where | Before | After |
+|---|---|---|
+| Rewilding "The land" row (`facts.landArea`) | Almost 100 hectares | Around 80 hectares |
+| Rewilding opening | …Much of the rest is left alone. We want to see… | …Much of the rest is left alone. Neighbouring farmland stays as it is. We want to see… |
+| Rewilding top photo | Archive sunset-strip photo, tag "Archive photo · Not the trial plot", "Grassland and trees, from our archive." | Real photo: "April 2020, dry season." (no tag) |
+| Rewilding "What is happening now" | text only | adds "The same hill in 2020 and 2024, seen from VitaminAir. Left alone." and a pair captioned "After four months without people, June 2023." |
+| Home "The land today" photo | Archive mountain photo, tag "Archive photo · Not the trial plot", "Grassland and forest, from our archive." | Real photo: "The land, November 2023." (no tag) |
+| Default social image | Archive mountain photo | land-nov-2023.jpg, with matching alt text |
+| Rewilding closing block | Helping with the trial. If you know native trees, nurseries or this part of Cambodia, we would like to hear from you. Researchers, planting groups and students are welcome too. Button: Email us about the trial | Working together. We’d like to talk with organisations that fund or support native tree planting. What we would agree together: planting support, care in the first years, long-term protection of planted areas, simple reporting, and visits by arrangement. Planting can be done in funded batches, timed to the rainy season. Species, costs and capacity are still being worked out. We’ll share them when they’re ready. Button: Discuss a planting partnership (subject "Planting partnership"). Plain link: "If you know native trees or nurseries, or you research this part of Cambodia, email us about the planting trial." |
+| Home contact band | (no line for organisations) | If your organisation supports native tree planting, we’d like to talk. (links to /rewilding/#working-together) |
+| Contact reasons list | Planting trial and research first | Planting partnerships (new, first): For organisations that fund or support native tree planting. |
+| Contact meta description | Email VitaminAir about the planting trial, research, supporting the work or the village idea… | Email VitaminAir about planting partnerships, the planting trial, research, supporting the work or the village idea… |

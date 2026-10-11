@@ -3,10 +3,10 @@ title: "The rewilding plan"
 description: "How we leave recovering land alone and plan a small native tree planting trial on cleared patches in Kampong Seila, Cambodia."
 eyebrow: "Rewilding"
 statement: "Leave what’s recovering. *Test* what isn’t."
-image: "/images/sunset-strip.jpg"
-imageAlt: "Grassland and scattered trees at sunset, with a hill in the distance"
-tag: "Archive photo · Not the trial plot"
-caption: "Grassland and trees, from our archive."
+image: "/images/dry-season-2020.jpg"
+imageAlt: "A small open shelter in dry grass, with a forested hill and a thin line of smoke behind it"
+tag: ""
+caption: "April 2020, dry season."
 glance:
   heading: "At a glance"
   rows:
@@ -29,11 +29,19 @@ stage:
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia. Parts of it were cleared decades ago. Much of the rest is left alone. We want to see if careful native planting can help the cleared patches that are not recovering.
+We look after land in Kampong Seila, Cambodia. Parts of it were cleared decades ago. Much of the rest is left alone. Neighbouring farmland stays as it is. We want to see if careful native planting can help the cleared patches that are not recovering.
 
 ## What is happening now {status=today}
 
 Much of the land is being left alone. Around 2020 and 2021 we saw parts of it recovering without any planting. So where nature is already doing the work, we stay out of the way. That will not be true of every cleared patch, so we also want to test planting.
+
+![The same hill in 2020, bare and burnt with red soil, and in 2024, green and recovering](/images/hill-2020-2024.jpg "The same hill in 2020 and 2024, seen from VitaminAir. Left alone.")
+
+::: pair
+![A small building almost hidden by young trees](/images/reclaimed-2023-a.jpg)
+![Creeping plants growing across a paved floor between concrete posts](/images/reclaimed-2023-b.jpg)
+After four months without people, June 2023.
+:::
 
 ## The planting trial we’re planning {status=planned}
 
@@ -74,8 +82,16 @@ Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subjec
 
 ---
 
-## Helping with the trial
+## Working together
 
-If you know native trees, nurseries or this part of Cambodia, we would like to hear from you. Researchers, planting groups and students are welcome too.
+We’d like to talk with organisations that fund or support native tree planting.
 
-[Email us about the trial](mailto:info@vitaminair.org?subject=Planting%20trial){.btn-primary}
+What we would agree together: planting support, care in the first years, long-term protection of planted areas, simple reporting, and visits by arrangement.
+
+Planting can be done in funded batches, timed to the rainy season.
+
+Species, costs and capacity are still being worked out. We’ll share them when they’re ready.
+
+[Discuss a planting partnership](mailto:info@vitaminair.org?subject=Planting%20partnership){.btn-primary}
+
+If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting trial](mailto:info@vitaminair.org?subject=Planting%20trial).
