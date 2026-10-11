@@ -85,7 +85,6 @@ ${fieldSvg('contours contours--foot', 1440, 360, 5, '#F6F1E6', 0.06, 16, 10)}
 <div class="container foot-inner">
 <p class="foot-line"><span>VITAMINAIR · ${esc(facts.location.replace(', ', ' · ').toUpperCase())}</span><a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a><span>SITE UPDATED ${esc(build.buildDate)}</span></p>
 <ul class="foot-links" aria-label="Elsewhere">${socials}<li><a href="/blog/feed.xml">Journal RSS</a></li><li><a href="${esc(site.mapUrl)}" rel="noopener">Map ↗</a></li><li class="foot-legend">${legendDetails('legend--foot')}</li></ul>
-<p class="foot-partners foot-strands">Forestry · Farming · Technology · Education · Recreation</p>
 <p class="foot-partners">${partnersHtml}</p>
 <p class="foot-partners foot-credit">Design inspired by <a href="https://itonami.studio/" rel="noopener">Itonami Studio</a>.</p>
 </div>

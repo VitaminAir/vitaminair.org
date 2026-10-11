@@ -11,7 +11,7 @@ stage:
 ---
 We would like to build a village here one day, where people can live, work, grow food and look after the forest. We don’t know yet what it would look like.
 
-VitaminAir is about five things: forestry, farming, technology, education and recreation. A village would bring them together in one place, where people can do real work and still be close to the forest. We would build slowly, and only once the forest recovery is going well.
+The idea is a place where people can do real work and still be close to the forest. We would build slowly, and only once the forest recovery is going well.
 
 ::: note
 ## What this is not
