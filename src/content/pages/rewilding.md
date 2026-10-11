@@ -21,7 +21,7 @@ glance:
       value: "Burned through it several times since 2021"
     - label: "Next planting"
       status: "planned"
-      value: "Miyawaki, {{facts.pilotArea}} to start"
+      value: "Miyawaki pilot, {{facts.pilotArea}}"
     - label: "Saplings, initial target"
       value: "{{facts.pilotSaplings}}"
 stage:
@@ -30,7 +30,7 @@ stage:
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to try the Miyawaki method on one small patch. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
+We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on 1–2 hectares. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
 
 ## What is happening now {status=today}
 
@@ -63,7 +63,7 @@ Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of clea
 
 ## What we’ll record
 
-The next planting starts with one small plot, by hand, and we will write down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
+The next planting starts with the 1–2 hectare pilot, by hand, and we will write down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
 
 ## After the pilot
 
