@@ -1,4 +1,4 @@
-import { site } from '../data/site.ts';
+import { site, facts } from '../data/site.ts';
 import { esc, mailto } from '../lib/html.ts';
 import { legendDetails } from './parts.ts';
 import { fieldSvg, edge } from './art.ts';
@@ -27,6 +27,8 @@ export interface BuildInfo {
 
 export function layout(meta: PageMeta, main: string, build: BuildInfo, bodyClass = ''): string {
   bodyClass = [bodyClass, meta.stage ? 'has-stage' : ''].filter(Boolean).join(' ');
+  if (!meta.banner && (meta.description.length < 120 || meta.description.length > 160))
+    throw new Error(`\n  Meta description for ${meta.path} is ${meta.description.length} characters; it must be 120-160.\n  ${meta.description}\n`);
   const canonical = site.url + meta.path;
   const ogImage = site.url + site.ogImage;
   const navHtml = site.nav
@@ -37,6 +39,8 @@ export function layout(meta: PageMeta, main: string, build: BuildInfo, bodyClass
     .join('');
   const cur = (p: string) => (meta.path === p ? ' aria-current="page"' : meta.nav === p ? (meta.navExact === false ? ' aria-current="true"' : ' aria-current="page"') : '');
   const menuLinks = [{ name: 'Home', path: '/' }, ...site.nav].map((n) => `<a href="${n.path}"${cur(n.path)}>${esc(n.name)}</a>`).join('');
+  const names = site.partners.map((x) => (x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>` : esc(x.name)));
+  const partnersHtml = `Working with ${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}.`;
   const socials = site.socials
     .map((s) => `<li><a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a></li>`)
     .join('');
@@ -54,10 +58,13 @@ ${meta.noindex ? '<meta name="robots" content="noindex">\n' : ''}<meta property=
 <meta property="og:description" content="${esc(meta.description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta property="og:image" content="${esc(ogImage)}">
+<meta property="og:image:alt" content="${esc(site.ogImageAlt)}">
+<meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(meta.title)}">
 <meta name="twitter:description" content="${esc(meta.description)}">
 <meta name="twitter:image" content="${esc(ogImage)}">
+<meta name="twitter:image:alt" content="${esc(site.ogImageAlt)}">
 <meta name="theme-color" content="#F4EDDF">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="VitaminAir journal" href="/blog/feed.xml">
@@ -76,8 +83,9 @@ ${edge('up', 7, meta.footOnSand ? 'edge--on-sand' : '')}
 <footer class="site-footer">
 ${fieldSvg('contours contours--foot', 1440, 360, 5, '#F6F1E6', 0.06, 16, 10)}
 <div class="container foot-inner">
-<p class="foot-line"><span>VITAMINAIR · REWILDING IN CAMBODIA</span><a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a><span>SITE UPDATED ${esc(build.buildDate)}</span></p>
+<p class="foot-line"><span>VITAMINAIR · ${esc(facts.location.replace(', ', ' · ').toUpperCase())}</span><a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a><span>SITE UPDATED ${esc(build.buildDate)}</span></p>
 <ul class="foot-links" aria-label="Elsewhere">${socials}<li><a href="/blog/feed.xml">Journal RSS</a></li><li><a href="${esc(site.mapUrl)}" rel="noopener">Map ↗</a></li><li class="foot-legend">${legendDetails('legend--foot')}</li></ul>
+<p class="foot-partners">${partnersHtml}</p>
 </div>
 </footer>${meta.stage ? `
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Main menu">
@@ -86,7 +94,7 @@ ${fieldSvg('contours contours--foot', 1440, 360, 5, '#F6F1E6', 0.06, 16, 10)}
 <div class="menu-inner">
 <div class="menu-head"><a class="wordmark" href="/">VitaminAir</a><button class="menu-close" type="button" aria-label="Close menu">${CROSS}</button></div>
 <nav class="menu-nav" aria-label="Menu">${menuLinks}</nav>
-<p class="menu-foot"><a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a><span>Cambodia · forest first</span></p>
+<p class="menu-foot"><a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a><span>${esc(facts.location.replace(', ', ' · '))}</span></p>
 </div>
 </div>` : ''}${meta.stage ? '\n<script type="module" src="/hero/main.ts"></script>' : ''}
 </body>

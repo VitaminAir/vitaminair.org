@@ -1,4 +1,4 @@
-import { site, labels, type StatusKey } from '../data/site.ts';
+import { site, facts, labels, type StatusKey } from '../data/site.ts';
 import { esc, label, statement, note, imgTag, mailto, btnPrimary } from '../lib/html.ts';
 import { renderMarkdown } from '../lib/markdown.ts';
 import type { Article } from '../lib/content.ts';
@@ -58,7 +58,7 @@ ${edge('down', 30)}
 <div class="land-text">
 ${eyebrow(L.eyebrow, nextNote())}
 <h2 id="land-h" class="section-h" data-rv>${esc(L.heading)} ${label(L.status as StatusKey)}</h2>
-<dl class="facts" data-rv>${L.facts.map((f: any) => `<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join('')}<div><dt>Where</dt><dd>${esc('Cambodia')} · <a href="${esc(site.mapUrl)}" rel="noopener">Open the map ↗</a></dd></div></dl>
+<dl class="facts" data-rv>${L.facts.map((f: any) => `<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join('')}<div><dt>Where</dt><dd>${esc(facts.location)} · <a href="${esc(site.mapUrl)}" rel="noopener">Open the map ↗</a></dd></div></dl>
 </div>
 </section>
 ${edge('up', 11)}`;

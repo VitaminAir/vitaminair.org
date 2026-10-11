@@ -7,7 +7,7 @@ stage:
   scene: "land"
   seed: 2
 ---
-We’re a small team. Email is the best way to reach us.
+Email is the best way to reach us.
 
 [Email us](mailto:info@vitaminair.org?subject=Hello%20from%20the%20website){.btn-primary} [info@vitaminair.org](mailto:info@vitaminair.org?subject=Hello%20from%20the%20website)
 
@@ -17,5 +17,7 @@ We’re a small team. Email is the best way to reach us.
 - **[Visiting.](mailto:info@vitaminair.org?subject=Visit%20request)** Visits are by arrangement only. Email us before you come.
 
 **Location.** {{facts.location}} · [Open in Google Maps ↗](https://maps.app.goo.gl/gitGrar6EdW5U5cu5)
+
+{{facts.partners}}
 
 **Elsewhere.** [Telegram](https://t.me/vitaminair) · [Facebook](https://www.facebook.com/VitaminAirHome) · [Instagram](https://www.instagram.com/vitaminairorg) · [YouTube](https://www.youtube.com/@vitaminair3611)

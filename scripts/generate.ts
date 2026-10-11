@@ -65,7 +65,7 @@ export function generate(): Manifest {
     pages,
     articles: journal
       .filter((a) => a.status === 'published')
-      .map((a) => ({ path: a.path, title: a.title, description: a.description, date: a.date, time: a.time, author: a.author })),
+      .map((a) => ({ path: a.path, title: a.title, description: a.metaDescription ?? a.description, date: a.date, time: a.time, author: a.author })),
   };
   writeFileSync(join(out, 'manifest.json'), JSON.stringify(manifest, null, 1));
   return manifest;

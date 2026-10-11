@@ -11,6 +11,8 @@ export interface Article {
   date: string;
   time: number;
   description: string;
+  /** Optional 120-160 character text for <meta description> and social cards; falls back to description. */
+  metaDescription?: string;
   type: ArticleType;
   status: 'published' | 'draft';
   archive: boolean;
@@ -86,6 +88,7 @@ export function loadJournal(showDrafts = false): Article[] {
       date,
       time,
       description: data.description,
+      metaDescription: typeof data.metaDescription === 'string' ? data.metaDescription : undefined,
       type: data.type,
       status: data.status,
       archive: data.archive === true,

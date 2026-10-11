@@ -1,6 +1,6 @@
 ---
 title: "A village, one day"
-description: "A long-term vision for a place in Cambodia where people can live, work, grow food and care for the surrounding forest. Not built, not on offer."
+description: "A long-term idea for a place in Kampong Seila, Cambodia where people could live, work, grow food and look after the forest. Not built, not on offer."
 eyebrow: "Long-term vision"
 statement: "A village, *one day*."
 status: "vision"
@@ -9,14 +9,14 @@ stage:
   seed: 5
   label: true
 ---
-One day, we want VitaminAir to become a place where people can live, work, grow food and care for the surrounding forest. We are still exploring what that village should look like. The forest recovery comes first.
+We would like to build a village here one day, where people can live, work, grow food and look after the forest. We don’t know yet what it would look like.
 
-Some of us already spend time on the land and keep working with colleagues in the city. That mix of quiet days, real work and a good connection is the seed of the idea. A village would make it possible for more people.
+The idea is a place where people can do real work and still be close to the forest. We would build slowly, and only once the forest recovery is going well.
 
 ::: note
-## What this isn’t (yet)
+## What this is not
 
-This is not a residential development. There are no homes or plots for sale and no bookings. None of the things listed below are built. If the idea interests you, we’d like to hear from you anyway.
+This is not a residential development. There are no homes or plots for sale and no bookings. Nothing listed below is built. If the idea interests you, you can still write to us.
 :::
 
 ## Things we want to explore {status=vision}
@@ -25,34 +25,34 @@ This is not a residential development. There are no homes or plots for sale and 
 
 ### Homes
 
-We want to explore simple, durable buildings that suit the climate and sit lightly on the land.
+Simple, durable buildings suited to the heat and the rains.
 
 ### Food
 
-We want to explore growing some of our own food alongside the forest rather than instead of it.
+Growing some food alongside the forest, not in place of it.
 
 ### Water
 
-We want to explore collecting and managing water through the wet and dry seasons.
+Collecting and keeping water through the wet and dry seasons.
 
 ### Energy
 
-We want to explore solar and other ways of powering daily life and work.
+Solar and other ways to power daily life and work.
 
 ### Connectivity
 
-We want to explore a connection reliable enough to do real work from the forest.
+An internet connection good enough to do real work from here.
 
 ### Community
 
-We want to explore who lives here, how decisions are made, and how we work with our neighbours.
+Who would live here, how decisions get made, and how we work with our neighbours.
 
 ### Learning
 
-We want to explore sharing what we learn about the land, and learning from people who know it.
+Sharing what we learn about the land, and learning from people who know it better.
 
 :::
 
-[Tell us what draws you](mailto:info@vitaminair.org?subject=Village%20idea){.btn-primary}
+[Write to us about the village idea](mailto:info@vitaminair.org?subject=Village%20idea){.btn-primary}
 
 **Related reading:** [Reconnecting With Nature](/blog/2024/08/reconnecting-with-nature-finding-inspiration/) (Reflection, 2024) · [The Dawn of Red Moon Valley](/blog/2024/08/the-dawn-of-red-moon-valley/) (Story, 2024)

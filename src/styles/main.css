@@ -67,16 +67,25 @@ h2, h3 { color: var(--forest); }
 .eyebrow { font: 600 12.5px/1.3 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--laterite); margin: 0 0 18px; }
 .note-no { font-variant-numeric: tabular-nums; }
 .statement { font-weight: 560; letter-spacing: -.02em; line-height: 1.02; color: var(--ink); }
+.statement:has(em.mark) { line-height: 1.08; }
+.stage .statement--hero:has(em.mark) { line-height: 1.13; }
 .statement--hero { font-size: clamp(2.6rem, 7vw, 6.2rem); max-width: 11em; }
 .statement--page { font-size: clamp(2.4rem, 6vw, 5rem); max-width: 14em; }
 .statement--sm { font-size: clamp(2.4rem, 5vw, 4rem); }
 .statement--band { font-size: clamp(2.6rem, 6.5vw, 5.6rem); font-weight: 500; color: var(--on-dark); }
 .statement .label { font-size: 11.5px; letter-spacing: .08em; vertical-align: middle; position: relative; top: -.15em; margin-left: .3em; }
+span.nw { white-space: nowrap; }
 em.mark {
   --mk: var(--laterite);
+  --stroke: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M1 6.2C14 4.4 30 7.4 48 5.4S82 3.8 99 5.6' fill='none' stroke='%23000' stroke-width='4.8' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
   font-style: normal; color: var(--forest);
-  background: linear-gradient(var(--mk), var(--mk)) no-repeat 0 100% / 100% .12em;
-  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  position: relative; display: inline-block; white-space: nowrap;
+}
+/* the underline is a separate hand-drawn stroke placed below the descenders, so it never crosses a g, y or p */
+em.mark::after {
+  content: ""; position: absolute; left: -.02em; right: -.02em; bottom: -.21em; height: .15em;
+  background: var(--mk); pointer-events: none;
+  -webkit-mask: var(--stroke) center / 100% 100% no-repeat; mask: var(--stroke) center / 100% 100% no-repeat;
 }
 .statement--band em.mark, .stage em.mark { --mk: var(--on-dark-mark); }
 .statement--band em.mark { color: var(--on-dark); }
@@ -336,10 +345,11 @@ li.row:hover .arrow, li.row:focus-within .arrow { transform: translateX(4px); }
 .reading-photo .photo img { aspect-ratio: 652 / 133; object-fit: cover; }
 .reading-photo .photo figcaption { padding-inline: 14px; }
 .reading { max-width: calc(66ch + 2 * var(--gutter)); margin: 0 auto; padding: calc(var(--head-gap) * 2) var(--gutter) var(--section-y); }
-.closing { background: var(--paper-2); padding-block: var(--section-y); }
+.closing { background: var(--paper-2); padding-block: calc(var(--section-y) * .3) calc(var(--section-y) * .5); }
 .closing .reading { padding-block: 0; }
+.closing .reading > :last-child { margin-bottom: 0; }
 .closing h2 { margin-top: 0; font-size: clamp(1.45rem, 2.6vw, 1.8rem); }
-.reading.has-closing { padding-bottom: calc(var(--section-y) / 2); }
+.reading.has-closing { padding-bottom: calc(var(--section-y) * .6); }
 .reading h2 { font-size: clamp(1.45rem, 2.6vw, 1.8rem); margin: 2em 0 .6em; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; letter-spacing: -.01em; }
 .reading h3 { font-size: 1.25rem; margin: 1.6em 0 .5em; }
 .reading > :first-child, .reading > p:first-child { font-size: 1.12rem; }
@@ -404,6 +414,8 @@ figcaption { font-size: .86rem; color: var(--ink-soft); margin-top: 8px; line-he
 .foot-line a { display: inline-flex; align-items: center; min-height: 44px; text-transform: none; letter-spacing: .02em; font-size: 14px; }
 .foot-links { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: .92rem; }
 .foot-links a, .foot-links summary { display: inline-flex; align-items: center; min-height: 44px; }
+.foot-partners { margin: 6px 0 0; font-size: .92rem; color: var(--on-dark-soft); }
+.foot-partners a { color: var(--on-dark); }
 .foot-legend:has(details[open]) { flex-basis: 100%; }
 .site-footer .legend summary { color: var(--on-dark); }
 .site-footer .legend dd { color: var(--on-dark-soft); }
@@ -420,18 +432,20 @@ figcaption { font-size: .86rem; color: var(--ink-soft); margin-top: 8px; line-he
 /* section reveal: hidden start states only under html.js and only for marked elements (the module sets data-rv.in) */
 .js .rv [data-rv] { opacity: 0; transform: translateY(12px); }
 .js .rv [data-rv].in { opacity: 1; transform: none; transition: opacity 600ms ease-out, transform 600ms ease-out; transition-delay: calc(var(--i, 0) * 80ms); }
-.js em.mark { background-size: 0 .12em; }
-.js em.mark.in { background-size: 100% .12em; transition: background-size 700ms ease-out 150ms; }
+.js em.mark::after { clip-path: inset(0 100% 0 0); }
+.js em.mark.in::after { clip-path: inset(0 0 0 0); transition: clip-path 700ms ease-out 150ms; }
 .js .divider svg { clip-path: inset(-6px 100% -6px 0); }
 .js .divider.in svg { clip-path: inset(-6px 0 -6px 0); transition: clip-path 1200ms ease-in-out; }
 @media (prefers-reduced-motion: reduce) {
   .js .rv [data-rv] { opacity: 1; transform: none; }
-  .js em.mark { background-size: 100% .12em; transition: none; }
+  .js em.mark::after { clip-path: none; transition: none; }
   .js .divider svg { clip-path: none; }
 }
 /* failsafe: if the module never runs, reveal everything after 3s */
-@keyframes rv-fail { to { opacity: 1; transform: none; background-size: 100% .12em; clip-path: inset(-6px 0 -6px 0); } }
-.js:not([data-rv]) .rv [data-rv], .js:not([data-rv]) em.mark, .js:not([data-rv]) .divider svg { animation: rv-fail 0s 3s forwards; }
+@keyframes rv-fail { to { opacity: 1; transform: none; clip-path: inset(-6px 0 -6px 0); } }
+@keyframes rv-fail-mk { to { clip-path: inset(0 0 0 0); } }
+.js:not([data-rv]) .rv [data-rv], .js:not([data-rv]) .divider svg { animation: rv-fail 0s 3s forwards; }
+.js:not([data-rv]) em.mark::after { animation: rv-fail-mk 0s 3s forwards; }
 
 /* small-screen menu: hamburger in the header, full-screen panel over the hero's contours (src/hero/menu.ts) */
 .menu-btn, .menu-close { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; margin-right: -8px; border: 0; background: none; cursor: pointer; font: 600 12.5px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--forest); }

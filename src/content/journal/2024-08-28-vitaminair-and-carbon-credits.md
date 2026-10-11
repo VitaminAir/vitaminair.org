@@ -2,6 +2,7 @@
 title: "VitaminAir and Carbon Credits"
 date: "2024-08-28T14:58:52-07:00"
 description: "VitaminAir, with its focus on environmental stewardship and sustainable practices, has the potential to participate in the carbon credit market. The project, located on a 100-hectare farm, engages in activities such as reforestation, sustainable farming, and soil conservation, all of which contribute to carbon sequestration."
+metaDescription: "Archived August 2024 discussion of carbon credits. VitaminAir has not obtained carbon verification; the figures are exploratory estimates only."
 type: "article"
 status: "published"
 archive: true

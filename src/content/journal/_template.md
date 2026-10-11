@@ -9,6 +9,7 @@ type: "update"                     # article | update | story | reflection
 status: "draft"                    # draft | published
 tags: ["rewilding", "planting"]
 # --- optional fields (delete the lines you do not use) ---
+# metaDescription: "120-160 characters for search and social previews, if description is longer or shorter"
 # archive: true                    # adds the ARCHIVE label (for older pieces kept as written)
 # note: "Context shown in a box above the article."
 # author: "Name"                   # only when the byline is confirmed

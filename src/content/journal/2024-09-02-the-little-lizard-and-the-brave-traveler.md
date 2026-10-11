@@ -2,6 +2,7 @@
 title: "The Little Lizard and the Brave Traveler"
 date: "2024-09-02T13:45:31-07:00"
 description: "This story focuses on the universal themes of growth, self-discovery, and the courage to change. It’s designed to encourage children to reflect on their own challenges and consider how overcoming them can lead to personal transformation."
+metaDescription: "A children's story from 2024 about growth, self-discovery and the courage to change, told through a little lizard and a brave traveler."
 type: "story"
 status: "published"
 tags: ["Posts", "Personal Growth", "Stories"]
@@ -9,7 +10,7 @@ legacyCategory: "Leadership and Personal Growth"
 author: "CD Bella"
 image: "/images/sunset-strip.jpg"
 imageAlt: "Grassland and scattered trees at sunset, with a hill in the distance"
-imageCaption: "Photo from VitaminAir’s archive."
+imageCaption: "Archive photo, not the trial plot."
 featured: true
 canonical: "/blog/2024/09/the-little-lizard-and-the-brave-traveler"
 sourceFile: "2024-09-02-13-45-31_posts,personal-growth,stories_the-little-lizard-and-the-brave-traveler.md"

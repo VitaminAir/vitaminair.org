@@ -52,5 +52,8 @@ Upload `dist/`. Every page is a directory with an `index.html` (`/rewilding/inde
   - **GitHub Pages:** redirects `/dir` to `/dir/` automatically. No `_redirects` support there; the stub pages carry the legacy redirects.
   - **nginx:** `location / { try_files $uri $uri/ =404; }` (nginx 301s `/dir` to `/dir/`). Use `error_page 404 /404.html;`.
   - `vite preview` does not add the slash redirect; use the slash form when previewing.
-- **Legacy redirects.** `dist/_redirects` (Netlify/Cloudflare syntax) gives real 301s. The same old URLs also exist as small meta-refresh + canonical stub pages, so hosts without `_redirects` still forward visitors. Where a stub file exists at the same path, Netlify serves the file and not the rule unless you force the rule (`301!`); either result lands the visitor on the right page. Feed readers do not follow meta refresh, so `/blog/feed/rss` only redirects properly where `_redirects` is supported.
+- **Legacy redirects.** `dist/_redirects` (Netlify syntax) gives real 301s. The same old URLs also exist as small meta-refresh + canonical stub pages, so hosts without `_redirects` (GitHub Pages, plain nginx or S3) still forward visitors.
+  - **Why the rules are forced.** Netlify serves an existing file before a normal redirect rule, so a stub at `/blog/about/index.html` would win over `/blog/about/ /village/ 301`. Every generated rule therefore uses `301!` (force), which makes Netlify send a real 301 and ignore the stub. The stubs stay as the fallback for other hosts.
+  - **Cloudflare Pages.** Redirects already take priority over static files there, and its parser does not document the `!` flag. If it rejects the lines, delete the `!` from `301!` in `scripts/postbuild.ts` and rebuild.
+  - Feed readers do not follow meta refresh, so `/blog/feed/rss` only redirects properly where `_redirects` is supported.
 - The site needs no server code, database or API.

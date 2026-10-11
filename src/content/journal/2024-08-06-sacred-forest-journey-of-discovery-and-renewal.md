@@ -2,6 +2,7 @@
 title: "Sacred Forest Journey of Discovery"
 date: "2024-08-06T23:22:04-07:00"
 description: "An enchanting story of a teacher and students who transform a sacred Cambodian forest, blending traditional Khmer elements with modern sustainability to create a thriving, harmonious community."
+metaDescription: "A story from 2024 about a teacher and students who renew a sacred Cambodian forest. Fiction: the places and facilities are made up."
 type: "story"
 status: "published"
 note: "Fiction. The school, farm, solar power and internet in this story are imagined. They are not facilities on our land."
@@ -10,7 +11,7 @@ legacyCategory: "Leadership and Personal Growth"
 author: "CD Bella"
 image: "/images/sunset-strip.jpg"
 imageAlt: "Grassland and scattered trees at sunset, with a hill in the distance"
-imageCaption: "Photo from VitaminAir’s archive."
+imageCaption: "Archive photo, not the trial plot."
 featured: true
 canonical: "/blog/2024/08/sacred-forest-journey-of-discovery-and-renewal"
 sourceFile: "2024-08-06-23-22-04_posts_sacred-forest-journey-of-discovery-and-renewal.md"
@@ -21,9 +22,9 @@ Once upon a time, in a land filled with tradition and ancient tales, a teacher j
 
 The teacher agreed to stay, but only if they could find a serene place far from the city. Inspired by their shared vision, the students embarked on a quest to locate a hidden sanctuary. They ventured deep into the Cambodian countryside, guided by legends and the whispers of the forest. After much searching, they discovered a lush, enchanted clearing near a sacred mountain, a place revered in local folklore.
 
-The teacher and students set up a base camp in this magical spot. As they began to settle in, they found that the forest was not as tranquil as they had hoped. The local villagers were still engaging in activities that was harming the environment. They were cutting down the ancient trees, fishing with harmful methods, and producing charcoal from the forest. The sounds of chainsaws and the smoke of charcoal fires, though less intense than the pollution of the city, still echoed through the forest.
+The teacher and students set up a base camp in this magical spot. As they began to settle in, they found that the forest was not as tranquil as they had hoped. The local villagers were still engaging in activities that were harming the environment. They were cutting down the ancient trees, fishing with harmful methods, and producing charcoal from the forest. The sounds of chainsaws and the smoke of charcoal fires, though less intense than the pollution of the city, still echoed through the forest.
 
-Determined to protect this sacred land, the teacher and students sought help from those who cherished Cambodia’s natural beauty. They turned to local elders. leaders and conservationists who knew the ancient ways of protecting the land. Together, they worked to end the destructive practices and introduced sustainable methods. They taught the villagers how to harvest responsibly, catch fish in ways that preserved their habitats, and make eco-friendly products.
+Determined to protect this sacred land, the teacher and students sought help from those who cherished Cambodia’s natural beauty. They turned to local elders, leaders and conservationists who knew the ancient ways of protecting the land. Together, they worked to end the destructive practices and introduced sustainable methods. They taught the villagers how to harvest responsibly, catch fish in ways that preserved their habitats, and make eco-friendly products.
 
 To support the villagers in their transition, the students supported a school for the children, where they could learn about their cultural heritage and environmental stewardship. They established a traditional farm and built community spaces where everyone could gather and celebrate. They organized festivals and seminars to honor the forest and the sacred mountain, bringing the community together and rekindling their connection to their roots.
 

@@ -48,11 +48,11 @@ export function journalPage(journal: Article[], build: BuildInfo, showDrafts: bo
     .join('\n');
   const main = `${pageStage({ eyebrow: 'Journal', statement: 'Notes, stories and *older* pieces.', cfg: { scene: 'land', seed: 1 }, scenes })}
 <div class="container journal-wrap">
-${groups || '<p class="empty">No entries yet.</p>'}
+${groups || '<p class="empty">No entries yet. New notes will appear here when we publish them.</p>'}
 ${legendDetails('legend--journal')}
 </div>`;
   return layout(
-    { title: 'Journal · VitaminAir', description: 'Notes, stories and older pieces from VitaminAir.', path: '/blog/', nav: '/blog/', stage: true },
+    { title: 'Journal · VitaminAir', description: 'Notes, stories and older pieces from VitaminAir: archive articles, short stories and reflections, newest first. Project updates will appear here.', path: '/blog/', nav: '/blog/', stage: true },
     main,
     build,
   );
@@ -97,7 +97,7 @@ ${noteHtml}
   return layout(
     {
       title: `${a.title} · VitaminAir`,
-      description: a.description,
+      description: a.metaDescription ?? a.description,
       path: a.path,
       ogType: 'article',
       nav: '/blog/',
@@ -115,5 +115,5 @@ export function notFoundPage(build: BuildInfo, scenes: HeroScene[]): string {
   const main = `${pageStage({ eyebrow: '404', statement: 'This page has *moved* or never existed.', cfg: { scene: 'land', seed: 4, faint: 0.45 }, scenes })}
 <div class="reading"><p>Try the <a href="/blog/">journal</a>, or email <a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a>.</p>
 <p class="actions">${btnPrimary('Go to the homepage', '/')}</p></div>`;
-  return layout({ title: 'Page not found · VitaminAir', description: 'This page could not be found.', path: '/404.html', noindex: true, stage: true }, main, build);
+  return layout({ title: 'Page not found · VitaminAir', description: 'This page could not be found. It may have moved. Try the VitaminAir journal or email info@vitaminair.org and we will point you to the right place.', path: '/404.html', noindex: true, stage: true }, main, build);
 }

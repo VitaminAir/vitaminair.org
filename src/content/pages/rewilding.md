@@ -1,18 +1,22 @@
 ---
 title: "The rewilding plan"
-description: "How we are leaving recovering land alone and planning a small native tree planting trial on cleared patches in Cambodia."
+description: "How we leave recovering land alone and plan a small native tree planting trial on cleared patches in Kampong Seila, Cambodia."
 eyebrow: "Rewilding"
 statement: "Leave what’s recovering. *Test* what isn’t."
 image: "/images/sunset-strip.jpg"
 imageAlt: "Grassland and scattered trees at sunset, with a hill in the distance"
 tag: "Archive photo · Not the trial plot"
-caption: "Grassland and trees near VitaminAir."
+caption: "Grassland and trees, from our archive."
 glance:
-  heading: "Trial at a glance"
+  heading: "At a glance"
   rows:
+    - label: "The land"
+      value: "{{facts.landArea}}"
+    - label: "Cleared {{facts.clearedWhen}}"
+      value: "{{facts.cleared}}"
     - label: "Pilot area"
       value: "{{facts.pilotArea}}"
-    - label: "Saplings"
+    - label: "Saplings, initial target"
       value: "{{facts.pilotSaplings}}"
     - label: "Method"
       value: "{{facts.pilotMethod}}"
@@ -25,15 +29,15 @@ stage:
   label: true
 closing: true
 ---
-We own {{facts.landOwned|lower}} of land in Cambodia. {{facts.cleared}} were cleared {{facts.clearedWhen}}. Much of the rest, and some of the cleared land, is coming back on its own. Our plan is to protect that, and to test whether careful native planting can help the patches that aren’t recovering.
+We look after land in Kampong Seila, Cambodia. Parts of it were cleared decades ago. Much of the rest is left alone. We want to see if careful native planting can help the cleared patches that are not recovering.
 
 ## What is happening now {status=today}
 
-Most of the land is being left alone. When we watched the land around 2020 and 2021, we saw parts of it recovering without any planting. That shaped our approach: where nature is already doing the work, we stay out of the way. That won’t be true of every cleared patch, which is why we want to test planting as well.
+Much of the land is being left alone. Around 2020 and 2021 we saw parts of it recovering without any planting. So where nature is already doing the work, we stay out of the way. That will not be true of every cleared patch, so we also want to test planting.
 
-## The trial we’re planning {status=planned}
+## The planting trial we’re planning {status=planned}
 
-We are planning an initial trial of {{facts.pilotSaplings}} native saplings using the Miyawaki method: many species, planted close together, on a pilot area of roughly a quarter to half a hectare. The species, planting layout and costs are still being worked out. The trial is not yet funded.
+We plan a planting trial on a pilot area of {{facts.pilotArea}}, with {{facts.pilotSaplings}} native saplings as an initial target. We would use the Miyawaki method: many native species, planted close together. The species, layout and costs are still being worked out. The trial is not yet funded.
 
 **Still to work out**
 
@@ -44,11 +48,11 @@ We are planning an initial trial of {{facts.pilotSaplings}} native saplings usin
 
 ## What we’ll record
 
-We want this to become an example others can learn from, so we’ll write down what happens: the real cost, the hours of care, which trees survive the dry season, and how the patch changes compared with land left to recover on its own. We’ll publish it in the journal, including what doesn’t work.
+We are starting with one small plot, by hand, and writing down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
 
 ## After the pilot
 
-If the pilot teaches us enough, we’ll consider expanding planting across more of the cleared areas. That’s a decision for later, based on what we learn, not a promise.
+If the pilot teaches us enough, we may plant more of the cleared areas. We have not decided. It is not a promise.
 
 ## Questions
 
@@ -70,8 +74,8 @@ Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subjec
 
 ---
 
-## Want to help with the trial?
+## Helping with the trial
 
-Native-tree nurseries, restoration researchers, planting organisations, students, and anyone with local knowledge of the species that belong here.
+If you know native trees, nurseries or this part of Cambodia, we would like to hear from you. Researchers, planting groups and students are welcome too.
 
 [Email us about the trial](mailto:info@vitaminair.org?subject=Planting%20trial){.btn-primary}

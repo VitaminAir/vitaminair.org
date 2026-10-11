@@ -1,5 +1,5 @@
 // Single source of truth for navigation, contact details, project facts and labels.
-// Page Markdown can use {{facts.landOwned}} (or {{facts.landOwned|lower}}); templates read from here too.
+// Page Markdown can use {{facts.landArea}} (or {{facts.landArea|lower}}); templates read from here too.
 
 export type StatusKey = 'today' | 'planned' | 'vision' | 'story' | 'archive' | 'reflection';
 
@@ -7,16 +7,23 @@ export const site = {
   name: 'VitaminAir',
   url: 'https://vitaminair.org',
   description:
-    'Almost 100 hectares in Cambodia, mostly left to recover naturally, with a planned native tree planting trial and a long-term village vision.',
+    'Land in Kampong Seila, Cambodia, mostly left to recover. A small native tree planting trial is planned. A village is a long-term hope, not an offer.',
   email: 'info@vitaminair.org',
   mapUrl: 'https://maps.app.goo.gl/gitGrar6EdW5U5cu5',
   ogImage: '/images/mountain.jpg',
+  ogImageAlt: 'Two people walking through tall grass toward a forested hill. An archive photo, not the trial plot.',
   socials: [
     { name: 'Telegram', url: 'https://t.me/vitaminair' },
     { name: 'Facebook', url: 'https://www.facebook.com/VitaminAirHome' },
     { name: 'Instagram', url: 'https://www.instagram.com/vitaminairorg' },
     { name: 'YouTube', url: 'https://www.youtube.com/@vitaminair3611' },
   ],
+  // Plain names only. Add a url when the owner confirms the link; no logos or descriptions.
+  partners: [
+    { name: 'KOOMPI', url: 'https://koompi.com/' },
+    { name: 'SmallWorld', url: 'https://smallworld.xyz/' },
+    { name: 'StadiumX' },
+  ] as { name: string; url?: string }[],
   nav: [
     { name: 'Rewilding', path: '/rewilding/' },
     { name: 'Village vision', path: '/village/' },
@@ -25,15 +32,21 @@ export const site = {
   ],
 };
 
+const partnerList = (md: boolean) => {
+  const p = site.partners.map((x) => (md && x.url ? `[${x.name}](${x.url})` : x.name));
+  return `Working with ${p.slice(0, -1).join(', ')} and ${p[p.length - 1]}.`;
+};
+
 export const facts = {
-  landOwned: 'Almost 100 hectares',
+  landArea: 'Almost 100 hectares',
   cleared: 'Around 30–40 hectares',
   clearedWhen: '20–30 years ago',
   pilotArea: '0.25–0.5 hectare',
   pilotSaplings: 'around 10,000',
   pilotMethod: 'Miyawaki, diverse native species',
   pilotFunding: 'Not yet funded',
-  location: 'Cambodia',
+  location: 'Kampong Seila, Cambodia',
+  partners: partnerList(true), // Markdown line with links, for page bodies
 };
 
 // What state each part of the project is in. Change here and every label follows.
