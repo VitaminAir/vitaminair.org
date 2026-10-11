@@ -14,7 +14,7 @@ Our work with this land began at the end of 2017. We started work on the ground 
 
 By then the land had already been hurt. While the Phnom Penh–Sihanoukville expressway was being built, the contractor took soil from the land for the road. No one told us. We learned later that the local authority had given some kind of permission, also without our knowledge. By February 2020 about half of the hill had been cut away. The top half of the photo above shows it.
 
-We did not notice in time because we were elsewhere. Our small team was busy building [KOOMPI](https://koompi.com/) laptops, and some of us spent months at a time at the factory in China.
+We did not notice in time because we were elsewhere. Our small team at SmallWorld was busy building laptops for [KOOMPI](https://koompi.com/), our sister company, and some of us spent months at a time at the factory in China.
 
 In February 2020 we moved onto the land, camped, and walked it to find and mark where it begins and ends, so we could plan where to plant. None of us had done this before. We were running a business in the city and trying to learn reforestation at the same time, and we still are.
 

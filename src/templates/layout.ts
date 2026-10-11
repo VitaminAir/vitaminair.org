@@ -1,4 +1,4 @@
-import { site, facts } from '../data/site.ts';
+import { site, facts, familyLine } from '../data/site.ts';
 import { esc, mailto } from '../lib/html.ts';
 import { legendDetails } from './parts.ts';
 import { fieldSvg, edge } from './art.ts';
@@ -39,8 +39,7 @@ export function layout(meta: PageMeta, main: string, build: BuildInfo, bodyClass
     .join('');
   const cur = (p: string) => (meta.path === p ? ' aria-current="page"' : meta.nav === p ? (meta.navExact === false ? ' aria-current="true"' : ' aria-current="page"') : '');
   const menuLinks = [{ name: 'Home', path: '/' }, ...site.nav].map((n) => `<a href="${n.path}"${cur(n.path)}>${esc(n.name)}</a>`).join('');
-  const names = site.partners.map((x) => (x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>` : esc(x.name)));
-  const partnersHtml = `Working with ${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}.`;
+  const partnersHtml = familyLine((x) => (x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>` : esc(x.name)));
   const socials = site.socials
     .map((s) => `<li><a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a></li>`)
     .join('');

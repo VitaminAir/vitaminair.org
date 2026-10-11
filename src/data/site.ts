@@ -7,7 +7,7 @@ export const site = {
   name: 'VitaminAir',
   url: 'https://vitaminair.org',
   description:
-    'Land in Kampong Seila, Cambodia, mostly left to recover. A small native tree planting trial is planned. A village is a long-term hope, not an offer.',
+    'Land in Kampong Seila, Cambodia, mostly left to recover. About 12 hectares planted by hand since 2020. A village is a long-term hope, not an offer.',
   email: 'info@vitaminair.org',
   mapUrl: 'https://maps.app.goo.gl/gitGrar6EdW5U5cu5',
   ogImage: '/images/land-nov-2023.jpg',
@@ -18,10 +18,11 @@ export const site = {
     { name: 'Instagram', url: 'https://www.instagram.com/vitaminairorg' },
     { name: 'YouTube', url: 'https://www.youtube.com/@vitaminair3611' },
   ],
-  // Plain names only. Add a url when the owner confirms the link; no logos or descriptions.
-  partners: [
+  // VitaminAir is a SmallWorld company; KOOMPI and StadiumX are sister companies (owner, 2026-10-12).
+  // Plain names only, no logos or descriptions.
+  parent: { name: 'SmallWorld', url: 'https://smallworld.xyz/' },
+  sisters: [
     { name: 'KOOMPI', url: 'https://koompi.com/' },
-    { name: 'SmallWorld', url: 'https://smallworld.xyz/' },
     { name: 'StadiumX', url: 'https://stadiumx.asia/' },
   ] as { name: string; url?: string }[],
   nav: [
@@ -32,10 +33,12 @@ export const site = {
   ],
 };
 
-const partnerList = (md: boolean) => {
-  const p = site.partners.map((x) => (md && x.url ? `[${x.name}](${x.url})` : x.name));
-  return `Working with ${p.slice(0, -1).join(', ')} and ${p[p.length - 1]}.`;
+/** "VitaminAir is part of SmallWorld, with its sister companies KOOMPI and StadiumX." */
+export const familyLine = (link: (x: { name: string; url?: string }) => string) => {
+  const s = site.sisters.map(link);
+  return `VitaminAir is part of ${link(site.parent)}, with its sister companies ${s.slice(0, -1).join(', ')} and ${s[s.length - 1]}.`;
 };
+const partnerList = (md: boolean) => familyLine((x) => (md && x.url ? `[${x.name}](${x.url})` : x.name));
 
 export const facts = {
   landArea: 'Around 80 hectares',
