@@ -22,8 +22,8 @@ glance:
     - label: "Next planting"
       status: "planned"
       value: "Miyawaki pilot, {{facts.pilotArea}}"
-    - label: "Saplings, initial target"
-      value: "{{facts.pilotSaplings}}"
+    - label: "First batch, initial target"
+      value: "{{facts.pilotSaplings}} saplings, about 3 per m²"
 stage:
   scene: "planting"
   seed: 3
@@ -52,18 +52,21 @@ In June 2024 we planted [54 young trees](/blog/2024/06/fifty-four-trees/) close 
 
 ## What we plan next {status=planned}
 
-Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of cleared land, with {{facts.pilotSaplings}} native saplings as an initial target: many native species, planted close together. The species, layout, fire protection and costs are still being worked out.
+Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of cleared land: many native species, planted close together. Most Miyawaki plantings use two to five saplings per square metre. Our first batch, {{facts.pilotSaplings}} saplings at about three per square metre, would plant roughly one hectare. The species, layout, fire protection and costs are still being worked out.
+
+A dense planting is meant to thin itself. Over the first years many stems die as the trees compete for light, and that is expected. It is different from saplings lost to drought, weeds or fire in the first years, which need replacing. We will count the two separately.
 
 **Still to work out**
 
 - Which native species, and where the saplings come from
 - Exactly where the pilot goes, and how dense the planting should be
-- How to keep fire out, and who looks after it through the first dry seasons
-- What it all costs
+- How to prepare the soil, and where water comes from in the dry season
+- How to keep fire out, and who looks after it through the first five years
+- What it all costs, including the care after planting day
 
 ## What we’ll record
 
-The next planting starts with the 1–2 hectare pilot, by hand, and we will write down what happens: the cost, the hours of care, which trees survive the dry season, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
+The next planting starts with the 1–2 hectare pilot, by hand, and we will write down what happens: the cost per sapling planted and per tree still alive, the hours of care, which species survive the dry seasons, how many stems the planting loses to thinning and how many to drought or fire, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
 
 ## After the pilot
 

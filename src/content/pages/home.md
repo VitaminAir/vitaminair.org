@@ -63,9 +63,9 @@ learn:
     - title: "Cost"
       body: "What a small native planting costs, including the work after planting day."
     - title: "Care"
-      body: "How much watering, weeding and replacing it takes, and for how long."
+      body: "How much watering, weeding and replacing it takes over the first five years."
     - title: "Survival"
-      body: "Which species make it through the first dry season, and which don’t."
+      body: "Which species make it through the dry seasons, and how many stems a dense planting loses as it thins."
     - title: "Changes in the land"
       body: "Shade, soil, birds and insects, recorded the same way each time so we can compare."
 village:

@@ -79,4 +79,4 @@ Prerequisites:
 - **Price per tree.** A real figure from the trial's cost data.
 - **Planting register.** Who, which species, how many, which plot, the date, and survival.
 - **Privacy notice.** Covers retention and consent.
-- **Honest promise.** Trees go into a plot, not "this exact tree forever", and losses are replaced in year one. Miyawaki planting is about 3 trees per m², and some losses are expected.
+- **Honest promise.** Trees go into a plot, not "this exact tree forever", and losses are replaced in year one. Miyawaki planting is usually 2–5 saplings per m² (we plan about 3). A dense planting is expected to thin itself over the first years: natural thinning is not replaced, but early losses to drought, weeds or fire are. The promise must say which is which.
