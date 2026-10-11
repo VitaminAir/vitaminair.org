@@ -1,0 +1,25 @@
+{
+  "name": "vitaminair-site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx scripts/generate.ts && vite",
+    "generate": "tsx scripts/generate.ts",
+    "build": "tsc --noEmit && tsx scripts/generate.ts && vite build && tsx scripts/postbuild.ts",
+    "preview": "vite preview",
+    "check": "tsc --noEmit",
+    "migrate": "tsx scripts/migrate-htmly.ts"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/noto-sans-khmer": "5.3.0",
+    "@fontsource-variable/public-sans": "5.3.0",
+    "@types/node": "26.6.5",
+    "gray-matter": "4.0.3",
+    "marked": "18.0.14",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.1"
+  }
+}

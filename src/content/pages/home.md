@@ -1,0 +1,85 @@
+---
+title: "VitaminAir: Rewilding land in Cambodia"
+description: "Almost 100 hectares in Cambodia, mostly left to recover naturally, with a planned native tree planting trial and a long-term village vision."
+hero:
+  animate: true
+  scenes:
+    - name: "Land"
+      caption: "{{facts.landOwned}} in Cambodia."
+      status: "today"
+    - name: "Recovery"
+      caption: "Much of it is being left to recover."
+      status: "today"
+    - name: "Planting"
+      caption: "A small native planting trial."
+      status: "planned"
+    - name: "Canopy"
+      caption: "What we hope will grow, in time."
+      status: "vision"
+    - name: "Village"
+      caption: "A village, one day."
+      status: "vision"
+  eyebrow: "Cambodia · Forest first"
+  statement: "*Rewilding* land in Cambodia."
+  intro: "We bought {{facts.landOwned|lower}} of land in Cambodia. Much of it is being left to recover naturally. On areas cleared decades ago, we want to trial native tree planting and share what we learn. Over time, we hope to build a village where people can live and work closer to nature."
+  primary:
+    text: "Explore the rewilding plan"
+    href: "/rewilding/"
+  link:
+    text: "Our village vision"
+    href: "/village/"
+land:
+  eyebrow: "The land today"
+  status: "today"
+  heading: "{{facts.landOwned}}, most of it left alone."
+  image: "/images/mountain.jpg"
+  alt: "Two people walking through tall grass toward a forested hill"
+  tag: "Archive photo · Not the trial plot"
+  caption: "Grassland and forest near VitaminAir."
+  facts:
+    - label: "Land we own"
+      value: "{{facts.landOwned}}"
+    - label: "Cleared {{facts.clearedWhen}}"
+      value: "{{facts.cleared}}"
+    - label: "Most of the land"
+      value: "Left undisturbed to recover"
+approach:
+  eyebrow: "Our approach"
+  statement: "Leave what is *recovering*. Help what is not."
+  items:
+    - title: "Natural recovery"
+      status: "today"
+      body: "Some areas are already recovering. What we saw on the land in 2020 and 2021 convinced us to leave those areas undisturbed and let them keep going."
+    - title: "Native planting trial"
+      status: "planned"
+      body: "On selected cleared patches, we want to try Miyawaki-style planting with diverse native species. We’ll start small, understand the care involved, and learn what survives before expanding."
+learn:
+  eyebrow: "What we want to learn"
+  status: "planned"
+  heading: "What we want to learn"
+  desc: "Four things we will write down."
+  items:
+    - title: "Cost"
+      body: "What a small, dense native planting really costs, including the work after planting day."
+    - title: "Care"
+      body: "How much watering, weeding and replacing it takes, and for how long."
+    - title: "Survival"
+      body: "Which species make it through the first dry season, and which don’t."
+    - title: "Changes in the land"
+      body: "Shade, soil, birds and insects, recorded the same way each time so we can compare."
+village:
+  eyebrow: "The village"
+  status: "vision"
+  statement: "A village, *one day*."
+  text: "One day, we want VitaminAir to become a place where people can live, work, grow food and care for the surrounding forest. We are still exploring what that village should look like. The forest recovery comes first."
+  linkText: "Read the village vision"
+journal:
+  eyebrow: "Journal"
+  heading: "Journal"
+  desc: "Notes, stories and older pieces."
+contact:
+  statement: "Get in *touch*."
+  text: "Interested in the planting trial, research or the village idea? Get in touch."
+  note: "Visits by arrangement."
+  subject: "Hello from the website"
+---

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <!-- Chheuteal, Dipterocarpus alatus: ribbed nut with two long wings splayed in a V -->
+  <path d="M12.2 16C8.2 13.8 4.8 9.2 3.4 3C8.6 4.2 12.8 8.8 13.4 15.2"/>
+  <path d="M11 13.2C8.6 10.8 6.2 7.6 5 5"/>
+  <path d="M15.8 15.8C19.8 13 23.4 8.4 24.8 2.4C19.6 3.8 15.6 8.8 14.7 15.2"/>
+  <path d="M16.8 13C19.2 10.2 21.8 6.8 23 4.2"/>
+  <path d="M14 15C17.6 15.2 19 18.6 17.7 22C16.9 24 15.4 25.3 14 26.4C12.6 25.3 11.1 24 10.3 22C9 18.6 10.4 15.2 14 15Z"/>
+  <path style="stroke:var(--tree-accent,currentColor)" d="M12.6 16C11.2 19 11.4 22.6 13.2 25.4M15.4 16C16.8 19 16.6 22.6 14.8 25.4"/>
+</svg>

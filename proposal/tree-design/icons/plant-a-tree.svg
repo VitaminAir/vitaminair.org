@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <!-- Button glyph: small sapling on a ground line, with a plus -->
+  <path d="M3.6 23.6C8 22.6 12.4 24.2 14.6 23.4C17.4 22.5 21 23.2 24.4 23.8"/>
+  <path d="M12 22.4C11.9 19.6 12.2 16.8 12 13.6"/>
+  <path d="M12 18C8.8 18.2 6.8 16.2 6.4 13.2C9.6 13 11.7 14.8 12 18Z"/>
+  <path d="M12.1 15C15 15.1 17 13.3 17.4 10.6C14.3 10.4 12.3 12.2 12.1 15Z"/>
+  <path style="stroke:var(--tree-accent,currentColor)" d="M21.4 3.6V10.2M18.1 6.9H24.7"/>
+</svg>
