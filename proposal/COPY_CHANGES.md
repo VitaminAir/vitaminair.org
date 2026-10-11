@@ -86,5 +86,5 @@ The owner explained that "rewilding" is the accurate word: where forest is growi
 - Home approach statement: "Test the rest." became "Help what isn't."
 - "Read the rewilding plan" / "The rewilding plan" became "How we rewild".
 - Working together: the colon list became "We would agree the details together, including care in the first years, how planted areas stay protected, reporting, and visits."
-- Hero headline: interim "Rewilding land in Kampong Seila." The final wording is pending the owner's choice.
+- Hero headline: "Let nature *reclaim*. Rewild where needed." (owner's wording), with the eyebrow back to "Kampong Seila · Cambodia".
 - Footer: added "Design inspired by Itonami Studio." with a link to https://itonami.studio/.

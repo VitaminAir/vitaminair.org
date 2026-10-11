@@ -19,8 +19,8 @@ hero:
     - name: "Village"
       caption: "A village is a long way off."
       status: "vision"
-  eyebrow: "Cambodia"
-  statement: "*Rewilding* land in Kampong Seila."
+  eyebrow: "Kampong Seila · Cambodia"
+  statement: "Let nature *reclaim*. Rewild where needed."
   intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plan to replant with the Miyawaki method, starting with one small trial, and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
   primary:
     text: "How we rewild"
