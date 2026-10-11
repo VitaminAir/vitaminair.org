@@ -36,7 +36,8 @@ Put the optimised file in `public/images/` (keep the name to replace it, or use 
 - `hill-2020-2024.jpg`: Rewilding, "What is happening now" (the 2020 and 2024 composite).
 - `reclaimed-2023-a.jpg`, `reclaimed-2023-b.jpg`: Rewilding, shown as a pair with `::: pair` (two image lines and a caption line).
 - `stream-nov-2023.jpg`: optimised but not used yet.
-- `camp-2020-*`, `stream-2020-*`, `hill-2020-*`, `road-2020`, `valley-2020-*`: the three February 2020 journal stories (base camp, the stream, the hill and the valley), from https://t.me/tour2020 (posts 614-695). Each story ends with links to the original Telegram posts.
+- `camp-2020-*`, `stream-2020-*`, `hill-2020-*`, `road-2020`, `valley-2020-*`: the three February 2020 stories (base camp, the stream, the hill and the valley). Photos by Charles DiBella (mentor), from his channel https://t.me/tour2020 (posts 614-695).
+- `trail-2020`, `fire-2021-*`, `planting-2021-*`, `water-2020-*`, `garden-2020-raised-bed`, `dew-2020-sensor`, `aland-2021-*`: the 2020-21 stories (water experiments, planting and the fire, the A-land homestead design), from https://t.me/vitaminair. Every story ends with links to its original Telegram posts; keep them as backlinks.
 - `mountain.jpg`, `sunset-strip.jpg`: archive photos, used only on journal articles, captioned "Archive photo, not the trial plot".
 Do not display more than the image's own width (800px). `tag:` in front matter is optional; leave it empty for a real photo of the land, and keep "not the trial plot" wherever a reader could mistake a photo for the trial plot.
 

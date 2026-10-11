@@ -4,7 +4,7 @@ date: "2020-02-11T17:00:00+07:00"
 description: "Below base camp the ground drops to a small stream with a pool and a little waterfall. Notes and photos from February 2020."
 type: "story"
 status: "published"
-note: "Written in October 2026 from photos posted on Telegram in February 2020."
+note: "Written in October 2026 from photos Charles DiBella posted on Telegram in February 2020."
 tags: ["Stories", "Land"]
 image: "/images/stream-2020-pool.jpg"
 imageAlt: "A shallow pool in a stream, held back by a line of stones, with trees and branches over the water"
@@ -33,4 +33,4 @@ The same stream runs under an old wooden bridge on the road to the next village.
 
 ---
 
-Photos were first posted on Telegram: [ladder](https://t.me/tour2020/645), [pool](https://t.me/tour2020/646), [stones](https://t.me/tour2020/647), [canyon](https://t.me/tour2020/650), [working in the stream](https://t.me/tour2020/695), [bridge](https://t.me/tour2020/632).
+Photos by Charles DiBella, our mentor, first posted on his Telegram channel [t.me/tour2020](https://t.me/tour2020): [ladder](https://t.me/tour2020/645), [pool](https://t.me/tour2020/646), [stones](https://t.me/tour2020/647), [canyon](https://t.me/tour2020/650), [working in the stream](https://t.me/tour2020/695), [bridge](https://t.me/tour2020/632).

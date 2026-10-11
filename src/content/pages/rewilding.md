@@ -43,6 +43,10 @@ Much of the land is being left alone. Around 2020 and 2021 we saw parts of it re
 After four months without people, June 2023.
 :::
 
+## What we planted before {status=today}
+
+Starting in November 2020, about 12 hectares were planted by hand with a partner. By January 2021 at least nine in ten of the first trees were alive. Then, in March 2021, a dry-season fire burned about a fifth of the site. Fire has gone through the planted area a few times since. [The full story](/blog/2021/03/planting-and-fire/) is in the journal. Any new planting has to plan for fire first.
+
 ## The planting trial we’re planning {status=planned}
 
 We plan a planting trial on a pilot area of {{facts.pilotArea}}, with {{facts.pilotSaplings}} native saplings as an initial target. We would use the Miyawaki method: many native species, planted close together. The species, layout and costs are still being worked out. The trial is not yet funded.

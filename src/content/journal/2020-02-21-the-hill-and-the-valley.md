@@ -4,7 +4,7 @@ date: "2020-02-21T08:00:00+07:00"
 description: "What the land looked like when we arrived in February 2020: a flat-topped hill, dry grass, a dirt road and a wide valley to the southwest."
 type: "story"
 status: "published"
-note: "Written in October 2026 from photos posted on Telegram in February 2020."
+note: "Written in October 2026 from photos Charles DiBella posted on Telegram in February 2020."
 tags: ["Stories", "Land"]
 image: "/images/hill-2020-grassland.jpg"
 imageAlt: "A flat-topped hill covered in forest, rising above dry grassland with scattered young trees"
@@ -33,4 +33,4 @@ It was the dry season. Most of the grass was brown, and some patches had been bu
 
 ---
 
-Photos were first posted on Telegram: [the hill](https://t.me/tour2020/616), [the road](https://t.me/tour2020/635), [view from the building spot](https://t.me/tour2020/637), [looking southwest](https://t.me/tour2020/675), [the valley below](https://t.me/tour2020/676).
+Photos by Charles DiBella, our mentor, first posted on his Telegram channel [t.me/tour2020](https://t.me/tour2020): [the hill](https://t.me/tour2020/616), [the road](https://t.me/tour2020/635), [view from the building spot](https://t.me/tour2020/637), [looking southwest](https://t.me/tour2020/675), [the valley below](https://t.me/tour2020/676).
