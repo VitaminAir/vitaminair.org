@@ -1,5 +1,6 @@
 // Static line art for the templates, drawn from the same noise field and contour tracer as the canvas
 // (src/art/contours.ts). Everything here is deterministic: same seed and size, same lines.
+import { linePaths } from '../art/lineart.ts';
 import { treeD, patch, TREE_H } from '../art/trees.ts';
 import { field, contourLines, spotHeights, simplify, pathD, fbm, noise, rng, clamp } from '../art/contours.ts';
 
@@ -11,7 +12,11 @@ function lines(w: number, h: number, seed: number, st: number, L: number, tol: n
 }
 
 /** The no-JS / reduced-motion twin of a canvas stage: the Land scene, two-tone, drawn from the shared field. */
-export function stageSvg(cls: string, w: number, h: number, seed: number, scene = 'land'): string {
+export function stageSvg(cls: string, w: number, h: number, seed: number, scene = 'land', art?: string): string {
+  if (art === 'grass' || art === 'terraces') {
+    const { thin, bold } = linePaths(art, w, h, seed);
+    return `<svg class="${cls}" aria-hidden="true" focusable="false" viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="#3F6E55" stroke-width="1" stroke-opacity=".9" d="${thin}"/><path stroke="#6F9478" stroke-width="1.6" stroke-opacity=".8" d="${bold}"/></svg>`;
+  }
   const ls = lines(w, h, seed, 10, 17, 1.6);
   const thin = ls.filter((l) => l.li % 4 != 2).map((l) => pathD(l.p)).join('');
   const idx = ls.filter((l) => l.li % 4 == 2).map((l) => pathD(l.p)).join('');

@@ -146,11 +146,13 @@ function village(w: number, h: number, u: number, ct: Poly[], cr: Crown[], R: R)
 
 // ---- runtime --------------------------------------------------------------------------------------------
 interface Info { name: string; caption: string; cls: string; text: string }
-interface PageCfg { scene: number; seed: number; faint?: number }
+interface PageCfg { scene: number; seed: number; faint?: number; art?: 'grass' | 'terraces' }
 const root = document.querySelector<HTMLElement>('.stage');
 const dataEl = document.getElementById('stage-data');
 const canvas = root?.querySelector<HTMLCanvasElement>('canvas');
-if (root && dataEl && canvas) {
+const pg: PageCfg | undefined = dataEl && JSON.parse(dataEl.textContent || '{}').page;
+if (root && canvas && pg?.art) import('./lineart-stage.ts').then((m) => m.start(root, canvas, pg.art!, pg.seed)); // grass / terraces: own lazy renderer
+else if (root && dataEl && canvas) {
   const cfg = JSON.parse(dataEl.textContent || '{}');
   const info: Info[] = cfg.scenes;
   const page: PageCfg | undefined = cfg.page;

@@ -5,7 +5,7 @@ import { stageSvg, edge } from './art.ts';
 
 export interface HeroScene { name: string; caption: string; status: StatusKey }
 /** Front matter `stage:` (pages) or a default in the template (journal, 404). */
-export interface StageCfg { scene: string; seed?: number; label?: boolean; faint?: number }
+export interface StageCfg { scene: string; seed?: number; label?: boolean; faint?: number; art?: string }
 
 export const SCENES = ['land', 'recovery', 'planting', 'canopy', 'village'];
 
@@ -19,7 +19,7 @@ export function pageStage(o: { eyebrow: string; statement: string; cfg: StageCfg
   const lab = labels[sc.status];
   const json = JSON.stringify({
     scenes: [{ name: sc.name, caption: sc.caption, cls: lab.cls, text: lab.text }],
-    page: { scene: idx, seed, ...(cfg.faint ? { faint: cfg.faint } : {}) },
+    page: { scene: idx, seed, ...(cfg.faint ? { faint: cfg.faint } : {}), ...(cfg.art && cfg.art !== 'contours' ? { art: cfg.art } : {}) },
   }).replace(/</g, '\\u003c');
   const pause = idx > 0
     ? `\n<div class="stage-ctl" hidden><button type="button" class="stage-pause" aria-pressed="false" aria-label="Pause animation"><span aria-hidden="true"></span></button></div>`
@@ -30,7 +30,7 @@ export function pageStage(o: { eyebrow: string; statement: string; cfg: StageCfg
 </div>`
     : '';
   return `<section class="stage stage--page${cfg.faint ? ' stage--faint' : ''}" aria-labelledby="stage-h">
-${stageSvg('stage-svg', 1440, 640, seed, String(cfg.scene).toLowerCase())}
+${stageSvg('stage-svg', 1440, 640, seed, String(cfg.scene).toLowerCase(), cfg.art)}
 <canvas class="stage-canvas" aria-hidden="true"></canvas>
 <div class="stage-scrim" aria-hidden="true"></div>
 <div class="stage-inner container">

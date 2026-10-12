@@ -82,7 +82,7 @@ export function articlePage(a: Article, all: Article[], build: BuildInfo, scenes
     plainTitle: true,
     titleClass: a.title.length > 50 ? 'statement--long' : 'statement--article',
     chips: labels,
-    cfg: { scene: 'land', seed: 10 + (seed % 60) },
+    cfg: { scene: 'land', seed: 10 + (seed % 60), art: ['contours', 'grass', 'terraces'][seed % 3] },
     scenes,
   });
   const main = `${stage}
