@@ -12,3 +12,6 @@ if (mb) {
   mb.addEventListener('focus', load);
   mb.addEventListener('click', () => load().then((x) => x.openMenu(mb)));
 }
+// the planting pilot page prints with every section open
+if (document.querySelector('.pilot'))
+  addEventListener('beforeprint', () => document.querySelectorAll<HTMLDetailsElement>('.pilot details').forEach((d) => (d.open = true)));

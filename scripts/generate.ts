@@ -6,6 +6,7 @@ import { pathToFileURL } from 'node:url';
 import { loadPage, loadJournal } from '../src/lib/content.ts';
 import { buildDateLabel, ROOT } from '../src/lib/html.ts';
 import { homePage } from '../src/templates/home.ts';
+import { pilotPage } from '../src/templates/pilot.ts';
 import type { HeroScene } from '../src/templates/stage.ts';
 import { detailPage, journalPage, articlePage, notFoundPage } from '../src/templates/pages.ts';
 
@@ -39,6 +40,8 @@ export function generate(): Manifest {
     files.set(path, detailPage(path, p.data, p.html, build, scenes));
     pages.push({ path, title: String(p.data.title) });
   }
+  files.set('/rewilding/pilot/', pilotPage(build, scenes));
+  pages.push({ path: '/rewilding/pilot/', title: 'Planting pilot' });
   files.set('/blog/', journalPage(journal, build, showDrafts, scenes));
   pages.push({ path: '/blog/', title: 'Journal' });
 

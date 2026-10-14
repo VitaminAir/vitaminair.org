@@ -21,7 +21,7 @@ hero:
       status: "vision"
   eyebrow: "Kampong Seila · Cambodia"
   statement: "Let nature *reclaim*.\nRewild where needed."
-  intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on 1–2 hectares and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
+  intro: "We rewild this land in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on about one hectare and write down what happens. Much later, we hope to build a village where people can live and work close to the forest."
   primary:
     text: "How we rewild"
     href: "/rewilding/"
@@ -53,7 +53,7 @@ approach:
       body: "About 12 hectares planted since 2020, not fully the Miyawaki method. Fire has set much of it back."
     - title: "A Miyawaki pilot"
       status: "planned"
-      body: "Next, dense native planting on 1–2 hectares of cleared land, planned around fire from the start."
+      body: "Next, dense native planting on about one hectare of cleared land, planned around fire from the start."
 learn:
   eyebrow: "What we want to learn"
   status: "planned"

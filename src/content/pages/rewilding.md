@@ -22,15 +22,15 @@ glance:
     - label: "Next planting"
       status: "planned"
       value: "Miyawaki pilot, {{facts.pilotArea}}"
-    - label: "First batch, initial target"
-      value: "{{facts.pilotSaplings}} saplings, about 3 per m²"
+    - label: "First batch"
+      value: "{{facts.pilotSaplings}} saplings, at 2, 3 and 4 per m²"
 stage:
   scene: "planting"
   seed: 3
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on 1–2 hectares. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
+We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on about one hectare. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
 
 ## What is happening now {status=today}
 
@@ -52,21 +52,21 @@ In June 2024 we planted [54 young trees](/blog/2024/06/fifty-four-trees/) close 
 
 ## What we plan next {status=planned}
 
-Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of cleared land: many native species, planted close together. Most Miyawaki plantings use two to five saplings per square metre. Our first batch, {{facts.pilotSaplings}} saplings at about three per square metre, would plant roughly one hectare. The species, layout, fire protection and costs are still being worked out.
+Next we want to try the Miyawaki method properly, on {{facts.pilotArea}} of cleared land: many native species, planted close together. Most Miyawaki plantings use two to five saplings per square metre. The pilot plans {{facts.pilotSaplings}} saplings in three equal plots, at two, three and four per square metre, on about two thirds of a hectare. The rest of the hectare is kept for firebreaks and access. [The planting pilot](/rewilding/pilot/) page has the layout, budget and what we will measure. The species, layout, fire protection and costs are still being worked out.
 
 A dense planting is meant to thin itself. Over the first years many stems die as the trees compete for light, and that is expected. It is different from saplings lost to drought, weeds or fire in the first years, which need replacing. We will count the two separately.
 
 **Still to work out**
 
 - Which native species, and where the saplings come from
-- Exactly where the pilot goes, and how dense the planting should be
+- Exactly where the pilot goes
 - How to prepare the soil, and where water comes from in the dry season
 - How to keep fire out, and who looks after it through the first five years
 - What it all costs, including the care after planting day
 
 ## What we’ll record
 
-The next planting starts with the 1–2 hectare pilot, by hand, and we will write down what happens: the cost per sapling planted and per tree still alive, the hours of care, which species survive the dry seasons, how many stems the planting loses to thinning and how many to drought or fire, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
+The next planting starts with the pilot of about one hectare, by hand, and we will write down what happens: the cost per sapling planted and per tree still alive, the hours of care, which species survive the dry seasons, how many stems the planting loses to thinning and how many to drought or fire, and how the plot compares with land left to recover on its own. We plan to publish it in the journal, including what doesn’t work. If it works, the notes may be useful to others.
 
 ## After the pilot
 

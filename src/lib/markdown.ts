@@ -3,6 +3,7 @@ import { facts } from '../data/site.ts';
 import { esc, label, imgTag, detailsRow } from './html.ts';
 import type { StatusKey } from '../data/site.ts';
 import { glyphFor } from '../templates/art.ts';
+import { renderFigure } from '../templates/figures.ts';
 
 /** Replace {{facts.key}} and {{facts.key|lower}} with the value from src/data/site.ts. */
 export function interpolate(text: string): string {
@@ -110,12 +111,12 @@ export function renderMarkdown(src: string): string {
     .replace(/\r\n/g, '\n')
     .replace(/\]\(([^)\s]+)\)\{\.btn-primary\}/g, `](\$1 "${BTN_TITLE}")`);
   const out: string[] = [];
-  const re = /^:::\s*(rows|items|note|pair)\s*\n([\s\S]*?)^:::\s*$/gm;
+  const re = /^:::\s*(rows|items|note|pair|figure\s+[\w-]+)\s*\n([\s\S]*?)^:::\s*$/gm;
   let last = 0;
   let mt: RegExpExecArray | null;
   while ((mt = re.exec(text))) {
     out.push(marked.parse(text.slice(last, mt.index)) as string);
-    out.push(mt[1] === 'rows' ? renderRows(mt[2]) : mt[1] === 'items' ? renderItems(mt[2]) : mt[1] === 'pair' ? renderPair(mt[2]) : renderNote(mt[2]));
+    out.push(mt[1].startsWith('figure') ? renderFigure(mt[1].split(/\s+/)[1], mt[2].trim() ? (marked.parseInline(mt[2].trim()) as string) : '') : mt[1] === 'rows' ? renderRows(mt[2]) : mt[1] === 'items' ? renderItems(mt[2]) : mt[1] === 'pair' ? renderPair(mt[2]) : renderNote(mt[2]));
     last = re.lastIndex;
   }
   out.push(marked.parse(text.slice(last)) as string);
