@@ -814,3 +814,30 @@ figcaption { font-size: .86rem; color: var(--ink-soft); margin-top: 8px; line-he
   .mfig-o { margin-bottom: 0 !important; }
 }
 @media print { .mfig, .mfig-steps li, .mfig-row, .mfig-tiles li, .mfig-care li { break-inside: avoid; } .mfig-care { grid-template-columns: repeat(4, 1fr); } }
+
+/* journal figures: CamTech */
+.mfig-dotf { fill: var(--forest); }
+.mfig-rule line { stroke: var(--forest-deep); stroke-width: 1.4; }
+.mfig-svg--cgrid { max-width: 420px; }
+.mfig-svg--waffle { max-width: 360px; margin: 12px 0; }
+.mfig-sqa { fill: var(--forest); background: var(--forest); stroke: none; }
+.mfig-sqd { fill: none; background: none; stroke: var(--ink-soft); stroke-width: 1.4; }
+.mfig-sw.mfig-sqd { border-color: var(--ink-soft); }
+.mfig-big { margin: 0; font: 560 clamp(2.2rem, 7vw, 3.2rem)/1.05 var(--serif); font-variation-settings: "SOFT" 50; color: var(--ink-soft); font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.mfig-big b { color: var(--forest-deep); font-weight: 560; }
+.mfig-big2 { margin: 4px 0 0; font: 560 1.4rem/1.3 var(--serif); color: var(--laterite-deep); }
+.mfig-ts2 { color: var(--ink-soft); font-size: .9rem; }
+.mfig-phases { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.mfig-phases li { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr); align-items: center; gap: 10px; margin: 0; padding: 7px 0; border-bottom: 1px solid var(--rule); font-size: .92rem; }
+.mfig-phases time { font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+.mfig-pbar { display: flex; height: 30px; }
+.mfig-seg { display: flex; align-items: center; justify-content: center; min-width: 0; font-variant-numeric: tabular-nums; font-size: .9rem; border: 1px solid var(--forest-deep); }
+.mfig-seg + .mfig-seg { border-left: 0; }
+.mfig-seg b { font-weight: 600; color: var(--forest-deep); }
+.mfig-trees { background: color-mix(in srgb, var(--forest) 45%, var(--paper)); }
+.mfig-flow { background-color: color-mix(in srgb, var(--laterite) 22%, var(--paper));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M-1 1l2-2M0 8l8-8M7 9l2-2' stroke='%23A34A26' stroke-width='1' opacity='.55'/%3E%3C/svg%3E"); border-color: var(--laterite-deep); }
+.mfig-flow b { color: var(--laterite-deep); background: color-mix(in srgb, var(--paper) 80%, transparent); padding: 0 3px; border-radius: 2px; }
+.mfig-none { flex: 1; border: 1px dashed var(--ink-soft); color: var(--ink-soft); background: none; }
+.mfig-pleg { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 10px 0 0; padding: 0; font-size: .92rem; }
+.mfig-pleg li { display: flex; align-items: center; gap: 8px; margin: 0; }

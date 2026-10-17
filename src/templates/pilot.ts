@@ -3,7 +3,7 @@ import { layout, type BuildInfo } from './layout.ts';
 import { pageStage, type HeroScene } from './stage.ts';
 import { divider } from './art.ts';
 import {
-  plots, plotW, plotL, accessY, accessH, plotM2, plotHa, totalSaplings, totalCost, remainingHa, fieldTrees, BOXES, PATCH_W, PATCH_H, wholeTotal, wholeExtraPct, diagonalM,
+  plots, plotW, plotL, accessY, accessH, plotM2, plotHa, totalSaplings, totalCost, remainingHa, fieldTrees, BOXES, PATCH_W, PATCH_H, diagonalM,
   SITE_SIDE_M, BUFFER_M, TRACK_M, DOT_R_M, PLANTED_HA, PRICE_USD, n0, dp, type Plot,
 } from '../data/pilot.ts';
 
@@ -150,7 +150,7 @@ ${markSvg(p)}
 <div><dt>Rows every</dt><dd>${dim2(p.rowM)} m</dd></div>
 <div><dt>Trees every</dt><dd>${dim2(p.inRowM)} m</dd></div>
 <div><dt>Shift every 2nd row</dt><dd>${p.shiftM ? `${dim2(p.shiftM)} m` : 'none'}</dd></div>
-<div><dt>Whole plot</dt><dd>${w.rows} rows × ${perRow} = ${n0(w.total)}, planned ${n0(p.saplings)}</dd></div>
+<div><dt>Whole plot</dt><dd>${w.rows} rows of ${perRow}, about ${n0(p.saplings)} saplings</dd></div>
 </dl>
 </figure>`;
 }
@@ -219,8 +219,8 @@ ${plots.map((p) => `<li>${sw(p.key)}<span class="pilot-exp-l">Plot ${p.letter}</
 </ol>
 <dl class="facts facts--grid" data-rv>
 <div><dt>Pilot land</dt><dd>approximately 1 hectare</dd></div>
-<div><dt>Saplings</dt><dd>${n0(totalSaplings)}</dd></div>
-<div><dt>Assumed sapling price</dt><dd>US$${PRICE_USD} each <span class="pilot-fnote">(saplings may be free)</span></dd></div>
+<div><dt>Saplings</dt><dd>About ${n0(totalSaplings)}</dd></div>
+<div><dt>Assumed sapling price</dt><dd>US$${PRICE_USD} each <span class="pilot-fnote">(may be lower, or free, through a partner)</span></dd></div>
 <div><dt>Initial sapling budget</dt><dd>US$${n0(totalCost)} <span class="pilot-fnote">(sapling purchase only)</span></dd></div>
 </dl>
 <p class="pilot-status" data-rv>${label('planned')} <span>This is a plan. Nothing on this page has been planted yet.</span></p>
@@ -291,12 +291,11 @@ ${plots.map(markFig).join('\n')}
 <tbody>
 ${row('Rows', plots.map((p) => String(p.whole.rows)))}
 ${row('Trees per row', plots.map((p) => (p.whole.perRowUnshifted === p.whole.perRowShifted ? String(p.whole.perRowUnshifted) : `${p.whole.perRowUnshifted} / ${p.whole.perRowShifted}`)))}
-${row('Trees if the whole plot is filled', plots.map((p) => n0(p.whole.total)))}
-${row('Planned', plots.map((p) => n0(p.saplings)))}
+${row('Saplings, about', plots.map((p) => n0(p.saplings)))}
 </tbody>
 </table>
 </div>
-<p class="pilot-prose pilot-qual">Filling each whole plot this way takes about ${dp(wholeExtraPct, 1)}% more trees than planned (${n0(wholeTotal)} instead of ${n0(totalSaplings)}), because the first row and first tree sit on the edge. Either order about ${dp(wholeExtraPct, 1)}% more, or leave the last row of each plot short. Decide before ordering. Count each row as it is planted and write down the real number.</p>
+<p class="pilot-prose pilot-qual">These counts are a guide, not a target. The edges of each plot, the ground and what the nurseries can supply will move the real number a little either way, so the pilot plans around ${n0(totalSaplings)} saplings in total. Count each row as it is planted and write down the real number.</p>
 <h3>Step by step</h3>
 <ol class="pilot-learn pilot-steps">
 <li>Peg the four corners of each ${wTxt} m × ${lTxt} m plot. Check it is square: both diagonals should measure ${dp(diagonalM, 1)} m.</li>
@@ -313,7 +312,7 @@ ${divider(43)}
 
 <section class="pilot-budget container rv" aria-labelledby="budget-h">
 <h2 id="budget-h" class="section-h pilot-h" data-rv>The starting budget</h2>
-<p class="pilot-big" data-rv>${n0(totalSaplings)} saplings · US$${n0(totalCost)} estimated purchase cost</p>
+<p class="pilot-big" data-rv>About ${n0(totalSaplings)} saplings · up to US$${n0(totalCost)} estimated purchase cost</p>
 <div class="pilot-bar" role="img" aria-label="Share of the sapling budget: ${plots.map((p) => `Plot ${p.letter} ${pctTxt(p)}`).join(', ')}">
 ${plots.map((p) => `<span class="pilot-bar-seg pilot-fill-${p.key}" style="flex-basis:${f(p.share * 100)}%"></span>`).join('')}
 </div>
@@ -329,7 +328,7 @@ ${plots.map((p) => `<tr><th scope="row">Plot ${p.letter} seedlings</th><td class
 </tbody>
 </table>
 </div>
-<p class="pilot-prose pilot-qual">US$1 per sapling is a planning assumption, not a confirmed supplier quotation. We may be able to get the saplings at no cost. Nothing is confirmed, so the plan keeps the full purchase cost until it is. If the saplings do come free, this part of the budget falls away and every other cost stays. This budget covers sapling purchases only. Transport, site preparation, planting labour, maintenance, fire management, replacements, monitoring, and long-term protection are additional costs to be estimated.</p>
+<p class="pilot-prose pilot-qual">US$1 per sapling is a planning assumption, not a confirmed supplier quotation. We plan to work with a partner to get saplings at low cost or for free. Nothing is confirmed, so the plan keeps the full purchase cost until it is. If the price comes down, this part of the budget shrinks and every other cost stays. This budget covers sapling purchases only. Transport, site preparation, planting labour, maintenance, fire management, replacements, monitoring, and long-term protection are additional costs to be estimated.</p>
 </section>
 
 ${divider(44)}

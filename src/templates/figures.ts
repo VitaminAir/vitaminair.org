@@ -3,6 +3,7 @@
 import { treeD } from '../art/trees.ts';
 import { esc } from '../lib/html.ts';
 import { plots, plotsM2, totalSaplings, n0 } from '../data/pilot.ts';
+import { CAMTECH_ROWS, camtechTrees, camtechFlowering, camtechTotal, camtechFirstTrees, CAMTECH_ALIVE_DEC22, camtechSurvivalPct, CAMTECH_FLOWERING_FIRST_BATCH } from '../data/camtech.ts';
 
 const f = (n: number) => String(Math.round(n * 10) / 10);
 const svgOpen = (vb: string, title: string, cls = '') =>
@@ -244,6 +245,60 @@ function differ(): string {
   return `<div class="mfig-cmp"><p class="mfig-cmph" aria-hidden="true"><span>The guides</span><span>Our plan</span></p>${rows.map(([g, o]) => `<div class="mfig-row"><p class="mfig-g"><span class="mfig-h">The guides</span>${esc(g)}</p><p class="mfig-o"><span class="mfig-h">Our plan</span>${esc(o)}</p></div>`).join('')}</div>`;
 }
 
+/* ---------- CamTech: grid, phases, survival ---------- */
+
+function camtechGrid(): string {
+  const C = plots[plots.length - 1]; // Plot C: 4 per m²
+  const perM2 = 4, spacing = 0.5, edge = 0.25;
+  if (C.perM2 !== perM2 || Math.abs(1 / (spacing * spacing) - perM2) > 1e-9 || Math.abs(edge - spacing / 2) > 1e-9)
+    throw new Error('figures.ts: the CamTech layout (4 per m², 0.5 m apart) must match pilot Plot C.');
+  const S = 100, ox = 76, oy = 56;
+  const px = (m: number) => f(ox + m * S), py = (m: number) => f(oy + m * S);
+  const dots: string[] = [];
+  for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) dots.push(`<circle class="mfig-dotf" cx="${px(edge + i * spacing)}" cy="${py(edge + j * spacing)}" r="7"/>`);
+  if (dots.length !== 4 * 4) throw new Error('figures.ts: the CamTech grid must hold 16 saplings in 4 squares.');
+  const hl = (x1: number, x2: number, y: number) => `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}"/><line x1="${x1}" y1="${y - 6}" x2="${x1}" y2="${y + 6}"/><line x1="${x2}" y1="${y - 6}" x2="${x2}" y2="${y + 6}"/>`;
+  const vl = (y1: number, y2: number, x: number) => `<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}"/><line x1="${x - 6}" y1="${y1}" x2="${x + 6}" y2="${y1}"/><line x1="${x - 6}" y1="${y2}" x2="${x + 6}" y2="${y2}"/>`;
+  const gx = ox + 2 * S, gy = oy + 2 * S;
+  return `${svgOpen(`0 0 376 ${gy + 62}`, 'Top view of four one-metre squares, each with four saplings 0.5 m apart and 0.25 m from the square edges: four saplings per square metre.', 'mfig-svg--cgrid')}
+<rect class="mfig-patch" x="${ox}" y="${oy}" width="${2 * S}" height="${2 * S}"/>
+<g class="mfig-rule"><line x1="${px(1)}" y1="${oy}" x2="${px(1)}" y2="${gy}"/><line x1="${ox}" y1="${py(1)}" x2="${gx}" y2="${py(1)}"/></g>
+${dots.join('')}
+<g class="mfig-dim">${hl(ox, ox + S, 30)}${vl(oy, oy + S, ox - 28)}${hl(ox + edge * S, ox + (edge + spacing) * S, gy + 28)}${vl(oy, oy + edge * S, gx + 28)}</g>
+<text class="mfig-t mfig-tb" x="${ox + S / 2}" y="20" text-anchor="middle">1 m</text>
+<text class="mfig-t mfig-tb" x="${ox - 38}" y="${oy + S / 2 + 5}" text-anchor="end">1 m</text>
+<text class="mfig-t mfig-tb" x="${f(ox + (edge + spacing / 2) * S)}" y="${gy + 54}" text-anchor="middle">0.5 m</text>
+<text class="mfig-t mfig-tb" x="${gx + 40}" y="${f(oy + edge * S / 2 + 5)}">0.25 m</text>
+</svg>
+<p class="mfig-line"><b>4 per m² · ${n0(C.perHa)} per ha</b></p><p class="mfig-note">Same spacing as Plot C in our pilot.</p>`;
+}
+
+function camtechPhases(): string {
+  const max = Math.max(...CAMTECH_ROWS.map((r) => (r.trees ?? 0) + (r.flowering ?? 0)));
+  const pct = (n: number) => f((n / max) * 100);
+  const rows = CAMTECH_ROWS.map((r) => {
+    const has = r.trees !== null || r.flowering !== null;
+    const bar = has
+      ? `<span class="mfig-seg mfig-trees" style="flex-basis:${pct(r.trees ?? 0)}%"><b>${n0(r.trees ?? 0)}</b></span>${r.flowering ? `<span class="mfig-seg mfig-flow" style="flex-basis:${pct(r.flowering)}%"><b>${n0(r.flowering)}</b></span>` : ''}`
+      : `<span class="mfig-seg mfig-none">no figure</span>`;
+    return `<li><time datetime="${r.iso}">${r.date}</time><span class="mfig-pbar">${bar}</span></li>`;
+  }).join('');
+  return `<ol class="mfig-phases" aria-label="Plants received by date">${rows}</ol>
+<ul class="mfig-pleg"><li><i class="mfig-sw mfig-trees"></i>Trees</li><li><i class="mfig-sw mfig-flow"></i>Flowering plants</li></ul>
+<p class="mfig-line"><b>${n0(camtechTotal)} plants: ${n0(camtechTrees)} trees, ${n0(camtechFlowering)} flowering</b></p>`;
+}
+
+function camtechSurvival(): string {
+  const cols = 12, rowsN = 9, total = cols * rowsN; // 108 squares, each about 10 trees
+  const alive = Math.round((CAMTECH_ALIVE_DEC22 / camtechFirstTrees) * total);
+  const sq = 18, gap = 5, w = cols * (sq + gap) - gap, h = rowsN * (sq + gap) - gap;
+  const cells = Array.from({ length: total }, (_, i) => `<rect class="${i < alive ? 'mfig-sqa' : 'mfig-sqd'}" x="${(i % cols) * (sq + gap)}" y="${Math.floor(i / cols) * (sq + gap)}" width="${sq}" height="${sq}" rx="2"/>`).join('');
+  return `<div class="mfig-surv"><p class="mfig-big"><b>${n0(CAMTECH_ALIVE_DEC22)}</b> of ${n0(camtechFirstTrees)}</p><p class="mfig-big2">about ${Math.round(camtechSurvivalPct)}%</p></div>
+${svgOpen(`-2 -2 ${w + 4} ${h + 4}`, `Waffle chart: ${alive} of ${total} squares filled, each square about ten trees. ${CAMTECH_ALIVE_DEC22} of ${camtechFirstTrees} trees were growing on 9 December 2022.`, 'mfig-svg--waffle')}${cells}</svg>
+<ul class="mfig-pleg"><li><i class="mfig-sw mfig-sqa"></i>Growing</li><li><i class="mfig-sw mfig-sqd"></i>Lost</li><li>One square is about 10 trees</li></ul>
+<p class="mfig-line">Flowering plants: all died <span class="mfig-ts2">(the first batch was ${n0(CAMTECH_FLOWERING_FIRST_BATCH)})</span></p>`;
+}
+
 export const FIGURES: Record<string, () => string> = {
   'miyawaki-steps': steps,
   'miyawaki-layers': layers,
@@ -252,10 +307,13 @@ export const FIGURES: Record<string, () => string> = {
   'miyawaki-care': care,
   'miyawaki-scale': scale,
   'miyawaki-differ': differ,
+  'camtech-grid': camtechGrid,
+  'camtech-phases': camtechPhases,
+  'camtech-survival': camtechSurvival,
 };
 
 export function renderFigure(name: string, captionHtml: string): string {
   const fn = FIGURES[name];
   if (!fn) throw new Error(`Unknown figure "${name}". Known figures: ${Object.keys(FIGURES).join(', ')}`);
-  return `<figure class="mfig mfig--${name.replace(/^miyawaki-/, '')}">${fn()}${captionHtml ? `<figcaption>${captionHtml}</figcaption>` : ''}</figure>\n`;
+  return `<figure class="mfig mfig--${name.replace(/^(miyawaki|camtech)-/, '')}">${fn()}${captionHtml ? `<figcaption>${captionHtml}</figcaption>` : ''}</figure>\n`;
 }
