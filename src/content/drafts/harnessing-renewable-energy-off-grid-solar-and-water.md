@@ -9,7 +9,7 @@ tags: [solar, water, offgrid, engineering, permaculture]
 draft: false
 ---
 
-Living outside the national electricity grid in Kampong Seila teaches you to count every watt and every liter of water. In the city, flicking a wall switch or opening a brass tap feels instantaneous and unlimited. Out here in the Cardamom foothills, power and water are physical weights you carry, wire, and balance against the weather every day. Our base camp has no utility poles connecting us to the highway. If we want lights at night, charged batteries for our field computers, and running water for the tree nursery, we have to collect it from the sky and the stream ourselves.
+Living outside the national electricity grid in Kampong Seila requires accounting for every watt and every liter of water against daily weather patterns. Without utility poles connecting our base camp to the highway, power and water are physical systems we wire, pipe, and balance ourselves. Generating nighttime light, charging field computers, and irrigating the tree nursery depends entirely on what we capture directly from the sun and the valley stream.
 
 When we started building camp in 2021, our setup was small and humble. We lit footpaths using five-dollar solar lamps built from plastic water bottles and bamboo poles. Our first camp office ran on a single fifty-watt solar panel wired to a thirty-six amp-hour lead-acid battery and a six-hundred-watt inverter. It was just enough to charge a laptop, run a desk fan, and power an LED bulb while writing notes at night. As our tree planting expanded and full-time crew moved onto the land, that small kit grew into a distributed direct-current system designed to handle the heavy humidity and heat of the valley.
 
