@@ -1,12 +1,10 @@
 ---
 title: "Looking after what we have"
+date: "2026-11-20T09:00:00+07:00"
 description: "No water mains or rubbish truck reach our camp. How we look after rainwater, wood, solar power and hand tools from day to day."
-date: 2026-10-30
-stage:
-  scene: Land
-  label: true
+type: "reflection"
+status: "published"
 tags: [conservation, resources, water, stewardship, permaculture]
-draft: false
 ---
 
 No water pipe or rubbish truck comes out to the land we look after in the Cardamom foothills. Everything here arrives on our own trucks, is carried in on foot, or falls from the sky. That changes how you look at the things you use every day.

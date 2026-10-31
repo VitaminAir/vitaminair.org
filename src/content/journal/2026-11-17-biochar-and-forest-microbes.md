@@ -1,12 +1,10 @@
 ---
 title: "Biochar and forest microbes for worn-out soil"
+date: "2026-11-17T09:00:00+07:00"
 description: "The cleared ground here is hard red clay. We turn bamboo and other trimmings into biochar, charge it with forest microbes and mix it into the beds."
-date: 2026-10-30
-stage:
-  scene: Land
-  label: true
+type: "article"
+status: "published"
 tags: [soil, biochar, permaculture, forestry, microorganisms]
-draft: false
 ---
 
 In Kampong Seila, where the trees were cleared decades ago for grazing and cash crops, the southwest monsoon washed the thin topsoil away. What is left is dense, acidic red clay and laterite. In the dry season it bakes as hard as brick, and in heavy rain it turns to slick mud that water cannot get into. The fine roots of young native hardwoods struggle to push through, and rain runs off the surface instead of soaking into the ground. Before we can grow a mixed Cardamom forest here, we have to repair the soil and the life in it.

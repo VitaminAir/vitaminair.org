@@ -1,12 +1,10 @@
 ---
 title: "Old skills and new tools in the nursery"
+date: "2026-11-27T09:00:00+07:00"
 description: "In our nursery, village elders and young volunteers work side by side. What local tree knowledge gives us, and where Miyawaki, biochar and solar help."
-date: 2026-10-30
-stage:
-  scene: Planting
-  label: true
+type: "article"
+status: "published"
 tags: [forestry, tradition, innovation, botany, stewardship]
-draft: false
 ---
 
 In our tree nursery in Kampong Seila, older villagers from the farming communities nearby work with young university volunteers and local rangers. In one corner, an elder splits green bamboo with a curved billhook to make supports for the nursery benches, judging it all by eye and hand. A few metres away, a young technician wires a solar panel straight to a small DC pump to push stream water uphill. Both are trying to get native trees to grow again on worn-out soil.

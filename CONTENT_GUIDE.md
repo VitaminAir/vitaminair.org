@@ -25,6 +25,7 @@ Detail pages open with a stage. In the page front matter: `stage: {scene: planti
 2. Fill in the front matter and write the post in Markdown (headings, lists, links, images, quotes, rules, code, tables).
 3. Keep `status: "draft"` while writing; the build excludes it everywhere.
 4. Set `status: "published"` and run `npm run build`. The post gets its page, appears first in the journal (sorted by date), and joins the sitemap and RSS.
+5. To schedule a post, give it a future `date` with a time, like `"2026-11-03T09:00:00+07:00"`. The build leaves it out until then (`VA_SHOW_DRAFTS=1` shows it locally). The "Publish scheduled posts" GitHub workflow rebuilds the site at 09:15 Phnom Penh time on any day a post is dated, so date scheduled posts 09:00 or earlier.
 
 Every page and post needs a `<meta description>` of 120-160 characters, and the build fails with the page name if it is outside that range. For posts it uses `description`; if that is longer or shorter (older migrated posts), add `metaDescription: "..."` (120-160 characters) and `description` stays as the journal summary. The default social image is `site.ogImage` in `src/data/site.ts` (with `site.ogImageAlt`).
 
@@ -43,7 +44,7 @@ Put the optimised file in `public/images/` (keep the name to replace it, or use 
 Do not display more than the image's own width (800px). `tag:` in front matter is optional; leave it empty for a real photo of the land, and keep "not the trial plot" wherever a reader could mistake a photo for the trial plot.
 
 ## Change status
-- Draft to published or back: edit `status` in the post.
+- Draft to published or back: edit `status` in the post. To hold back a scheduled post, set it to `"draft"` or move its `date` before that day comes.
 - Mark an older piece as archive: `archive: true` (adds the ARCHIVE label; add a `note` for context).
 - `src/content/drafts/` is never published. A draft left in `journal/` is also excluded.
 - `on-leadership-and-team-building` is a draft pending the owner's decision (the live URL returns 404).

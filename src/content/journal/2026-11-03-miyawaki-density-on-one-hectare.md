@@ -1,12 +1,10 @@
 ---
 title: "Testing Miyawaki density on one hectare"
+date: "2026-11-03T09:00:00+07:00"
 description: "We plan to plant 20,000 native saplings at three densities on about one hectare of cleared land. Most of the hard work is in the soil."
-date: 2026-10-29
-stage:
-  scene: Planting
-  label: true
+type: "update"
+status: "published"
 tags: [miyawaki, rewilding, soil, experiments]
-draft: false
 ---
 
 The cleared parts of the land we look after in Kampong Seila lost their forest decades ago. With no leaves falling to cover the ground, the monsoon rains washed the topsoil away, and the sun baked the clay underneath into a hard crust. If you dig a shallow hole and put a young tree in it, the roots cannot get through. The tree often suffocates or dries out.
