@@ -1,6 +1,6 @@
 ---
 title: "Biochar and forest microbes for worn-out soil"
-description: "Our cleared ground is hard red clay. We turn bamboo and other trimmings into biochar, charge it with forest microbes and mix it into the beds."
+description: "The cleared ground here is hard red clay. We turn bamboo and other trimmings into biochar, charge it with forest microbes and mix it into the beds."
 date: 2026-10-30
 stage:
   scene: Land

@@ -9,7 +9,7 @@ tags: [miyawaki, rewilding, soil, experiments]
 draft: false
 ---
 
-The cleared parts of our land in Kampong Seila lost their forest decades ago. With no leaves falling to cover the ground, the monsoon rains washed the topsoil away, and the sun baked the clay underneath into a hard crust. If you dig a shallow hole and put a young tree in it, the roots cannot get through. The tree often suffocates or dries out.
+The cleared parts of the land we look after in Kampong Seila lost their forest decades ago. With no leaves falling to cover the ground, the monsoon rains washed the topsoil away, and the sun baked the clay underneath into a hard crust. If you dig a shallow hole and put a young tree in it, the roots cannot get through. The tree often suffocates or dries out.
 
 On about one hectare of this cleared land we are setting up a test of the Miyawaki method. Timber plantations usually space trees two or three metres apart in rows. That leaves open ground that needs weeding for years. The Miyawaki method does the opposite. Many native species go in close together and grow up fast toward the light. They shade out the grass, and within three to five years the ground under them is cool and damp, like a forest floor.
 

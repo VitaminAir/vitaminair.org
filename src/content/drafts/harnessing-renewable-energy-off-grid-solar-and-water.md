@@ -15,7 +15,7 @@ When we started building camp in 2021, everything was small. We lit the paths wi
 
 ## Moving water uphill
 
-On a homestead or a nursery, moving water uphill uses more power than anything else. The stream that runs through our valley all year is 30 metres below the camp terraces and nursery beds. Carrying water up that slope in buckets is hard work and takes hours away from planting.
+On a homestead or a nursery, moving water uphill uses more power than anything else. The stream that runs through the valley all year is 30 metres below the camp terraces and nursery beds. Carrying water up that slope in buckets is hard work and takes hours away from planting.
 
 We did not want a noisy petrol pump, or a big, fragile battery bank to run AC motors. So we run DC pumps straight off the solar panels. When the sun is strongest, between ten in the morning and two in the afternoon, the panels power a submersible pump sitting in the stream bed. It lifts hundreds of litres an hour up the hill through black poly pipe.
 

@@ -9,7 +9,7 @@ tags: [conservation, resources, water, stewardship, permaculture]
 draft: false
 ---
 
-No water pipe or rubbish truck comes out to our land in the Cardamom foothills. Everything here arrives on our own trucks, is carried in on foot, or falls from the sky. That changes how you look at the things you use every day.
+No water pipe or rubbish truck comes out to the land we look after in the Cardamom foothills. Everything here arrives on our own trucks, is carried in on foot, or falls from the sky. That changes how you look at the things you use every day.
 
 Water needs the most attention. From May to October the rain pours off the camp roofs. Zinc gutters run into big concrete jars and blue plastic barrels, which store thousands of litres before the overflow goes to the garden swales. When the dry season comes in December, the rain stops, the stream drops and the camp changes its routine. A leaking hose fitting or a dripping tap is not something to fix next week. It is water the nursery beds will not get. So the crew carry a wrench and Teflon tape in their pockets and fix leaks straight away.
 
