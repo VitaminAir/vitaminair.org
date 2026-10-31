@@ -1,6 +1,6 @@
 ---
-title: "The One-Hectare Trial: Testing Miyawaki Density in Kampong Seila"
-description: "Why we are testing twenty thousand native saplings across three planting densities, and how soil preparation shapes forest survival."
+title: "Testing Miyawaki density on one hectare"
+description: "We plan to plant 20,000 native saplings at three densities on about one hectare of cleared land. Most of the hard work is in the soil."
 date: 2026-10-29
 stage:
   scene: Planting
@@ -9,16 +9,22 @@ tags: [miyawaki, rewilding, soil, experiments]
 draft: false
 ---
 
-Planting trees in tropical soil sounds simple until you examine the dirt under your boots. The cleared areas on our land in Kampong Seila were stripped of their primary forest decades ago. Without continuous leaf fall to shelter the ground, monsoon downpours washed away the topsoil. Harsh sun baked the remaining clay into hard crust. If you just dig a shallow hole and drop in a young tree, its roots cannot push into the hard soil. The young plant often suffocates or dries out.
+The cleared parts of the land we look after in Kampong Seila lost their forest decades ago. With no leaves falling to cover the ground, the monsoon rains washed the topsoil away, and the sun baked the clay underneath into a hard crust. If you dig a shallow hole and put a young tree in it, the roots cannot get through. The tree often suffocates or dries out.
 
-To solve this problem on our cleared land, we are setting up a controlled test using the Miyawaki method on about one hectare. Traditional timber plantations often space trees two or three meters apart in straight rows. That spacing leaves open ground that requires years of weed cutting. The Miyawaki method takes the opposite path. By planting many native species close together, the trees race upward toward sunlight. They shade out grass and create a moist forest microclimate within three to five years.
+On about one hectare of this cleared land we are setting up a test of the Miyawaki method. Timber plantations usually space trees two or three metres apart in rows. That leaves open ground that needs weeding for years. The Miyawaki method does the opposite. Many native species go in close together and grow up fast toward the light. They shade out the grass, and within three to five years the ground under them is cool and damp, like a forest floor.
 
-Our pilot layout is designed as an open field test. Rather than planting the entire hectare at one spacing, we are dividing roughly two-thirds of the land into three equal plots. Each plot tests a different density: two trees per square meter, three trees per square meter, and four trees per square meter. Across the plots, we will plant twenty thousand nursery-grown native saplings. We are keeping the remaining third of the hectare clear for wide perimeter firebreaks, farm paths, and water tanks.
+## The layout
 
-The hardest physical work happens before any sapling leaves the nursery. First, we loosen the compacted soil down to nearly one meter deep. Breaking up the ground allows taproots to grow straight down toward groundwater before the dry season arrives. Next, we mix large amounts of local organic material into the loosened dirt. Rice husks improve drainage in heavy clay. Coco peat holds water through hot weeks, and aged cattle manure brings back soil life. Finally, we cover the beds with thick mulch to keep the ground cool and damp.
+We will split about two-thirds of the hectare into three equal plots, planted at two, three and four trees per square metre. Across the three plots we plan to plant 20,000 native saplings raised in a nursery. The last third stays open for wide firebreaks around the edge, paths and water tanks.
 
-Tree survival in a dense planting follows two clear stages. During the first two years, we count individual stems and aim for eighty-five percent survival. If saplings die from dry heat during these early months, we replace them during the rainy season. By year three, however, the tree branches touch each other. The young trees begin to compete strongly for sunlight and soil space.
+## Soil first
 
-From that point on, we stop counting single stems. In a dense native forest, natural thinning is part of the process. Weaker stems die off naturally while dominant canopy trees spread out, lowering tree density to about half by year five. Instead of stem counts, we will measure overall canopy cover, looking for eighty percent shade across the plot. Where crowded understory saplings lose light, our nursery crew can dig them up and move them into new planting areas.
+The hardest work comes before any sapling leaves the nursery. We loosen the packed soil to nearly a metre deep, so taproots can go straight down toward groundwater before the dry season. Then we mix in local organic material. Rice husks help heavy clay drain. Coco peat holds water through the hot weeks, and aged cattle manure brings back soil life. Last, we cover the beds with thick mulch to keep the ground cool and damp.
 
-We know this trial will take real effort. Loosening deep soil and watering twenty thousand young trees through their first dry season requires steady work and daily care. But by writing down every cost, labor hour, and survival rate across the three test plots, we will learn what it takes to rebuild native forest on cleared ground.
+## Counting
+
+For the first two years we count every sapling and aim for 85% survival. Saplings that die in the dry heat are replaced in the rainy season.
+
+By year three the branches touch and the trees start competing for light and space. From then on we stop counting single stems. In a dense native forest the weaker stems die off on their own, and by year five there are about half as many. So we will measure canopy cover instead, and look for 80% shade across each plot. Where crowded understory saplings lose their light, the nursery crew can dig them up and move them to new planting areas.
+
+This will take a lot of work. Loosening the soil and watering 20,000 young trees through their first dry season means care every day. We will write down every cost, every hour of labour and the survival rate in each plot, to learn what it takes to grow native forest on cleared ground.

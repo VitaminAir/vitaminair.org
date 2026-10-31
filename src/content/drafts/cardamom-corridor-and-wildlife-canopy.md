@@ -1,6 +1,6 @@
 ---
-title: "The Cardamom Corridor: Building a Four-Tier Wildlife Canopy"
-description: "How connecting the forests of Bokor and the Cardamoms depends on vertical forest structure and year-round native fruit trees."
+title: "Planting four layers for wildlife"
+description: "The land we look after lies between the Cardamoms and Bokor. We plan to plant 25 native species in four layers, with fruit trees that feed animals all year."
 date: 2026-10-29
 stage:
   scene: Canopy
@@ -9,14 +9,16 @@ tags: [biodiversity, wildlife, botany, corridor]
 draft: false
 ---
 
-Our valley in Kampong Seila sits directly between two of Cambodia’s largest protected forests. To the north rise the steep ridges of the Southern Cardamom Mountains. To the south lie the high plateau forests of Preah Monivong Bokor National Park. Over recent decades, national highways, cassava farms, and private rubber plantations have cut this valley into pieces. Animals moving between the two national parks must now cross open fields and busy roads, where they face traffic and hunting.
+The land we look after in Kampong Seila is in a valley between two of Cambodia's largest protected forests. To the north are the ridges of the Southern Cardamom Mountains. To the south is the plateau forest of Preah Monivong Bokor National Park. Over the last few decades, national highways, cassava farms and private rubber plantations have cut the valley into pieces. Animals moving between the two parks now have to cross open fields and busy roads, where they meet traffic and hunters.
 
-Restoring safe passage across this valley requires more than planting random green trees. Commercial monocultures like acacia or rubber create biological dead zones where few native animals can feed. To build a true wildlife corridor, we need the multi-layered structure of a native Cardamom rainforest. In our planting plans, we arrange twenty-five native species across four distinct vertical layers.
+If our planting is going to help them cross, just any tree will not do. Monocultures like acacia or rubber give few native animals anything to eat. Animals need the layered structure of a native Cardamom forest. Our planting plan has 25 native species in four layers.
 
-The top layer belongs to the emergent giants, which make up about twenty percent of our mix. Keystone trees like Chheuteal and Koki push far above the main canopy, reaching heights of thirty to forty-five meters. These tall giants break heavy wind, catch morning mist, and provide nesting sites for hornbills and birds of prey. Below them sits the main canopy, growing twenty to thirty meters high. Here we plant hardy native hardwoods like Siamese Rosewood, Beng, and Burma Padauk. These native trees feed nitrogen into poor soil while casting dense shade that keeps the ground cool.
+The top layer is the emergent trees, about 20% of the mix. Chheuteal and Koki grow above the main canopy, to 30 to 45 metres. They break strong wind, catch the morning mist and give hornbills and birds of prey places to nest.
 
-Beneath the main canopy, we plant a dense sub-canopy of fruit and nut trees that grow ten to twenty meters tall. This layer provides constant wildlife food. Native wild cluster figs produce fruit directly on their trunks in steady waves throughout the year. When surrounding farmland turns dry and bare in February, these keystone figs keep feeding hornbills, fruit bats, and civets. We mix them with wild mango, wild rambutan, agarwood, and native almond trees, giving animals rich food in every season.
+Below them is the main canopy, 20 to 30 metres high. Here we plant hardy native hardwoods: Siamese rosewood, Beng and Burma padauk. They add nitrogen to poor soil, and their dense shade keeps the ground cool.
 
-The lowest level is the understory and shrub layer, rising three to ten meters from the ground. Shade-tolerant species like wild emblic, evergreen phnhiew, and Cambodia’s national flower, the Romduol, grow well in the soft light under the taller trees. Native forest palms like Chreav protect stream banks from erosion and drop oily berries for small mammals and forest birds.
+Under the canopy is a sub-canopy of fruit and nut trees, 10 to 20 metres tall. This is the layer that feeds animals. Wild cluster figs fruit straight from the trunk, in waves through the year. In February, when the farmland around is dry and bare, the figs still feed hornbills, fruit bats and civets. We mix them with wild mango, wild rambutan, agarwood and native almond, so there is food in every season.
 
-When these four tiers grow together, they do something a timber plantation can never match. They create continuous vertical cover that lets tree-dwelling animals travel off the ground. Gibbons and squirrels can move from branch to branch across previously bare land. At the same time, the thick canopy protects soil life from hard rains and slows down dry-season evaporation. By planting twenty-five native species together, we are helping two national parks meet again, one forest layer at a time.
+The lowest layer is the understory and shrubs, 3 to 10 metres tall. Species that grow in shade do well here, such as wild emblic, evergreen phnhiew and Romduol, Cambodia's national flower. Native forest palms like Chreav hold stream banks against erosion and drop oily berries for small mammals and forest birds.
+
+When the four layers grow up together, there is cover all the way from the ground to the top of the trees. Animals that live in trees can travel without coming down. Gibbons and squirrels could move from branch to branch across land that is bare today. The canopy also protects the life in the soil from hard rain and slows the drying in the dry season.
