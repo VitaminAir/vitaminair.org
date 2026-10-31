@@ -1,6 +1,6 @@
 ---
-title: "Learning from Fire: Four Years on the Land in Kampong Seila"
-description: "Twelve hectares planted by hand, several dry seasons of wildfire, and why planting trees without firebreaks is only half the work."
+title: "Fire, 2020 to 2024"
+description: "We planted about 12 hectares by hand in 2020 and 2021. Fire has burned through several times since. Now we plan for fire before we plant."
 date: 2026-10-29
 stage:
   scene: Recovery
@@ -9,16 +9,20 @@ tags: [rewilding, fire, cambodia, stewardship]
 draft: false
 ---
 
-When we began planting trees in Kampong Seila toward the end of 2020, the ground seemed ready for work. Parts of this valley had been cleared twenty or thirty years earlier for timber and cattle grazing, leaving behind open grass, compacted red soil, and scattered scrub. Along the ridges and creek lines, native secondary forest was already creeping back on its own. We decided early on to leave those recovering slopes alone. Where the soil was bare and open, we started planting by hand.
+We started planting in Kampong Seila toward the end of 2020. Parts of the valley had been cleared 20 or 30 years earlier for timber and cattle grazing. What was left was open grass, packed red soil and scattered scrub. Along the ridges and creeks, native secondary forest was already coming back on its own. We decided early to leave those slopes alone and to plant by hand only where the ground was bare.
 
-Between November 2020 and early 2021, we planted about twelve hectares alongside our partners. We carried saplings uphill in baskets and set them into dug pits with compost and rice husks. By late January 2021, our field counts showed that nine out of every ten saplings were alive and putting out fresh shoots. The soil held late monsoon moisture, and the young stems looked sturdy. We felt confident about the season ahead.
+Between November 2020 and early 2021 we planted about 12 hectares with our partners. We carried saplings uphill in baskets and set them in dug pits with compost and rice husks. At the end of January 2021 we counted, and nine in ten saplings were alive and putting out new shoots. The soil still held moisture from the end of the rains, and the young trees looked strong. We felt good about the season ahead.
 
-Then the dry season deepened. By March 2021, the tall grasses across the cleared flats had cured into dry, golden kindling. A brush fire started along the edge of the property, driven by steady afternoon winds off the southern hills. In less than forty-eight hours, the fire swept through roughly a fifth of the planted plots. Young trunks blackened, leaf mulch ignited, and weeks of careful field labor vanished in an afternoon of smoke.
+Then the dry season set in. By March 2021 the tall grass on the cleared flats was dry. A brush fire started along the edge of the land, and the afternoon wind off the southern hills pushed it in. In less than 48 hours it burned through about a fifth of the planted plots. Weeks of work were gone.
 
-Fire has returned to this land several times since that first burn. Even when a fire moves quickly through surface grasses without crowning, the heat kills the tender cambium layer of young saplings. Some hardy local roots resprout after the first rains in May, but many stems are set back to ground level or lost entirely. Watching young saplings burn forces you to rethink your priorities. Tree planting makes for good photographs, but keeping trees alive through the dry season requires dull, unglamorous groundwork.
+Fire has come back several times since. Even a fast grass fire that stays on the ground is hot enough to kill the thin living layer under a young tree's bark. Some local species sprout again from the roots after the first rains in May, but many are cut back to the ground or die. Planting trees makes good photos. Keeping them alive through the dry season is slow, dull groundwork.
 
-In June 2024, we planted fifty-four native trees close together on a small patch of ground that had burned just two months earlier in April. That planting was deliberately modest. We wanted to test dense spacing on a tiny scale while monitoring how quickly the surrounding grasses returned. Standing next to that small pocket of green reminded us of an obvious truth. A hundred people with shovels can plant thousands of saplings during a wet weekend in July, but a single dry afternoon in March can erase all of it if you have not planned for fire first.
+In June 2024 we planted 54 native trees close together on a small patch that had burned two months before, in April. We kept it small on purpose, to try dense spacing and to watch how fast the grass came back. Standing next to it reminded us of something obvious. A hundred people with shovels can plant thousands of saplings over a wet weekend in July. One dry afternoon in March can burn all of it if no one has planned for fire.
 
-Our approach on the land has shifted because of these fires. We no longer treat fire protection as something to figure out after the saplings are in the dirt. Before we plant another large block of cleared ground, our fire defenses must be ready first. That means cutting and scraping bare-dirt firebreaks along property edges and clearing vehicle tracks that double as fuel barriers. It means placing rainwater storage tanks where rangers can reach them quickly with hand hoses and backpack pumps. It also means establishing green buffer strips of fire-resilient, fleshy plants that stay moist during February and March.
+So we have changed how we work. Fire protection is no longer something to sort out after planting. Before we plant another large block of cleared ground, we want these ready:
 
-Living with fire has taught us patience. The patches of hill forest that we left alone in 2020 are taller and thicker today, proving that nature recovers steadily when human disturbance stops. On the cleared flats where we step in, we will keep planting. From now on, every shovel that enters the dirt is backed by cleared fire lanes, water reserves, and realistic dry-season patrols.
+- bare-earth firebreaks along the edges of the land, and vehicle tracks that also act as breaks
+- rainwater tanks where rangers can reach them quickly with hand hoses and backpack pumps
+- green strips of fleshy, fire-resistant plants that stay moist through February and March
+
+The hill forest we left alone in 2020 is taller and thicker today. Left alone, it recovers. On the cleared flats, where we do step in, we will keep planting, with fire lanes cleared, water stored and patrols through the dry season.
