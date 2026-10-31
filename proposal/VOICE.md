@@ -10,7 +10,7 @@ Owner direction (2026-10-11): humble, heads down, truthful. Close to stoic. Talk
 
 ## Facts and names
 - **Location:** Kampong Seila, Cambodia.
-- **Land:** "the land we look after" or "the land". Never "bought", "own", "acquired" or "our property". The size, "around 80 hectares", appears once as a plain fact on the Rewilding page (an "About the land" row). It never appears in the hero, headings, page descriptions or social previews.
+- **Land:** VitaminAir holds the land freehold, on a hard title (owner, 2026-10-31, replacing the 2026-10-11 rule that avoided ownership). Say so plainly where the land is introduced (Home intro, Rewilding intro, the forest plot offer), with the reason: to show that not all land has to go to housing or farming, and some should be kept for the wild. Elsewhere "the land" or "the land we look after" is enough. Still never "bought", "acquired" or "our property". The size, "around 80 hectares", appears once as a plain fact on the Rewilding page (an "About the land" row). It never appears in the hero, headings, page descriptions or social previews.
 - **Company:** VitaminAir is part of SmallWorld; KOOMPI and StadiumX are sister companies (owner, 2026-10-12). Say it plainly: "VitaminAir is part of SmallWorld, with its sister companies KOOMPI and StadiumX." No logos, and no descriptions of what each does until the owner confirms. Balance.eco and ISI remain unnamed (exploratory).
 - **Tree names** follow `src/art/trees.ts`.
 
@@ -48,6 +48,9 @@ Owner direction (2026-10-11): humble, heads down, truthful. Close to stoic. Talk
 ## Examples
 - **No:** "We bought around 80 hectares to restore Cambodia's forests and build a sustainable future."
 - **Yes:** "We look after land in Kampong Seila, Cambodia. Most of it is recovering on its own, and we leave that alone. On a few cleared patches we want to test careful native planting and write down what happens."
+
+- **No:** "We own a huge forest estate and are protecting it for future generations."
+- **Yes:** "VitaminAir holds this land freehold, on a hard title. We are rewilding it to show that not all land has to go to housing or farming. Some should be kept for the wild."
 
 - **No:** "Join us on our journey to heal the land!"
 - **Yes:** "If you know native trees, nurseries or this part of Cambodia, we'd like to hear from you."
