@@ -78,7 +78,7 @@ If the pilot teaches us enough, we may plant more of the cleared areas. We have 
 
 ### Is the next planting funded?
 
-Not yet. We are talking to possible collaborators, but nothing is confirmed.
+VitaminAir is paying for the pilot itself. Plots beyond the pilot can be funded by others, by area. The prices are below.
 
 ### Are you selling carbon credits?
 
@@ -92,16 +92,30 @@ Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subjec
 
 ---
 
-## Working together
+## Fund a forest plot {status=planned}
 
-We’d like to talk with organisations that fund or support native tree planting.
+Companies, schools and families can fund a plot of new native forest on cleared land here. We price by area, not by tree count, and you pay once.
 
-We would agree the details together, including care in the first years, how planted areas stay protected, reporting, and visits.
+| Plot | Area | Saplings | Price (US$) |
+|---|---|---|---|
+| Family plot | 10 m² | 40 | 200 |
+| Grove | 100 m² | 400 | 1,800 |
+| Forest block | 1,000 m² | 4,000 | 16,700 |
+| One hectare | 10,000 m² | 40,000 | 163,800 |
 
-Planting can be done in funded batches, timed to the rainy season.
+Prices exclude 10% VAT.
 
-Species, costs and capacity are still being worked out. We’ll share them when they’re ready.
+For each plot we:
 
-[Discuss a planting partnership](mailto:info@vitaminair.org?subject=Planting%20partnership){.btn-primary}
+- plant about four native saplings per square metre, Miyawaki method, in the rainy season after payment. Plots paid by 31 January are planted that May to October.
+- replant losses and look after the plot until Year 5
+- keep it as forest for 30 years: no felling, clearing or change of land use, with rangers watching for fire and encroachment
+- send a GPS map of the plot, photos and a yearly report, with a survey of survival and growth in Year 5
+
+We don’t sell carbon credits, and we don’t promise a tree count after Year 5. A dense planting thins itself as it grows. What we promise is the forest.
+
+The pilot comes first. What it teaches us may change the density and the prices.
+
+[Ask about a forest plot](mailto:info@vitaminair.org?subject=Forest%20plot){.btn-primary}
 
 If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting](mailto:info@vitaminair.org?subject=Planting).
