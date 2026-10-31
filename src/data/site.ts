@@ -8,7 +8,7 @@ export const site = {
   url: 'https://vitaminair.org',
   description:
     'Land in Kampong Seila, Cambodia, mostly left to recover. About 12 hectares planted by hand since 2020. A village is a long-term hope, not an offer.',
-  email: 'info@vitaminair.org',
+  email: 'tree@vitaminair.org',
   mapUrl: 'https://maps.app.goo.gl/gitGrar6EdW5U5cu5',
   ogImage: '/images/land-nov-2023.jpg',
   ogImageAlt: 'Green grass and scattered trees with a forested hill behind them, on the land in Kampong Seila, November 2023.',
