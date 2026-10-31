@@ -13,7 +13,7 @@ Edit `src/data/site.ts`: `facts` (land figures, pilot size), `status` and `label
 - Visible items (hairline, no toggle, 2 columns on desktop): `::: items` ... `:::` with `### Term` + sentence.
 - Note box: `::: note` ... `:::` (may contain a heading and text).
 - Named figure (journal posts): `::: figure miyawaki-steps` ... `:::` inserts a static diagram built at build time from `src/templates/figures.ts` (add new ones to `FIGURES` there). Any text inside the container becomes its caption. An unknown name fails the build and lists the known names.
-- Primary button, once per page: `[Email us](mailto:info@vitaminair.org?subject=Hello%20from%20the%20website){.btn-primary}`. Every other link stays a plain link. Mailto links should always carry a `?subject=` (spaces as `%20`).
+- Primary button, once per page: `[Email us](mailto:tree@vitaminair.org?subject=Hello%20from%20the%20website){.btn-primary}`. Every other link stays a plain link. Mailto links should always carry a `?subject=` (spaces as `%20`).
 - Facts used by the Rewilding "at a glance" list: `pilotArea`, `pilotSaplings`, `pilotMethod`, `pilotFunding` in `site.ts`.
 - If there are no published posts, the journal page shows "No entries yet. New notes will appear here when we publish them." and the homepage journal section is hidden.
 

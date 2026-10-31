@@ -53,6 +53,6 @@ Sharing what we learn about the land, and learning from people who know it bette
 
 :::
 
-[Write to us about the village idea](mailto:info@vitaminair.org?subject=Village%20idea){.btn-primary}
+[Write to us about the village idea](mailto:tree@vitaminair.org?subject=Village%20idea){.btn-primary}
 
 **Related reading:** [Reconnecting With Nature](/blog/2024/08/reconnecting-with-nature-finding-inspiration/) (Reflection, 2024) · [The Dawn of Red Moon Valley](/blog/2024/08/the-dawn-of-red-moon-valley/) (Story, 2024)

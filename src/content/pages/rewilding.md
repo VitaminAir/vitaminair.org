@@ -88,7 +88,7 @@ No. VitaminAir has not obtained carbon verification and has no credits to sell. 
 
 ### Can I visit?
 
-Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subject=Visit%20request) first.
+Visits are possible by arrangement. [Email us](mailto:tree@vitaminair.org?subject=Visit%20request) first.
 
 :::
 
@@ -118,6 +118,6 @@ We don’t sell carbon credits, and we don’t promise a tree count after Year 5
 
 The pilot comes first. What it teaches us may change the density and the prices.
 
-[Ask about a forest plot](mailto:info@vitaminair.org?subject=Forest%20plot){.btn-primary}
+[Ask about a forest plot](mailto:tree@vitaminair.org?subject=Forest%20plot){.btn-primary}
 
-If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting](mailto:info@vitaminair.org?subject=Planting).
+If you know native trees or nurseries, or you research this part of Cambodia, [email us about the planting](mailto:tree@vitaminair.org?subject=Planting).

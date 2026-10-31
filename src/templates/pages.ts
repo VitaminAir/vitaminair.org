@@ -115,5 +115,5 @@ export function notFoundPage(build: BuildInfo, scenes: HeroScene[]): string {
   const main = `${pageStage({ eyebrow: '404', statement: 'This page has *moved* or never existed.', cfg: { scene: 'land', seed: 4, faint: 0.45 }, scenes })}
 <div class="reading"><p>Try the <a href="/blog/">journal</a>, or email <a href="${esc(mailto('Hello from the website'))}">${esc(site.email)}</a>.</p>
 <p class="actions">${btnPrimary('Go to the homepage', '/')}</p></div>`;
-  return layout({ title: 'Page not found · VitaminAir', description: 'This page could not be found. It may have moved. Try the VitaminAir journal or email info@vitaminair.org and we will point you to the right place.', path: '/404.html', noindex: true, stage: true }, main, build);
+  return layout({ title: 'Page not found · VitaminAir', description: 'This page could not be found. It may have moved. Try the VitaminAir journal or email tree@vitaminair.org and we will point you to the right place.', path: '/404.html', noindex: true, stage: true }, main, build);
 }
