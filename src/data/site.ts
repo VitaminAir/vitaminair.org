@@ -42,6 +42,7 @@ const partnerList = (md: boolean) => familyLine((x) => (md && x.url ? `[${x.name
 
 export const facts = {
   landArea: 'Around 80 hectares',
+  landTitle: 'Freehold, on a hard title',
   cleared: 'Around 30–40 hectares',
   clearedWhen: '20–30 years ago',
   pilotArea: 'about 1 hectare',

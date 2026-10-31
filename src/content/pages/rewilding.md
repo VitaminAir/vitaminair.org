@@ -12,6 +12,8 @@ glance:
   rows:
     - label: "The land"
       value: "{{facts.landArea}}"
+    - label: "Title"
+      value: "{{facts.landTitle}}, held by VitaminAir"
     - label: "Cleared {{facts.clearedWhen}}"
       value: "{{facts.cleared}}"
     - label: "Planted {{facts.plantedWhen}}"
@@ -30,7 +32,7 @@ stage:
   label: true
 closing: true
 ---
-We look after land in Kampong Seila, Cambodia, and rewild it in two ways. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on about one hectare. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
+VitaminAir holds its land in Kampong Seila, Cambodia, freehold on a hard title. We are rewilding it to show that not all land has to go to housing or farming. Some should be kept for the wild. Where forest is growing back, we leave nature be. Where cleared land needs help, we plant. About 12 hectares have been planted by hand since 2020, and fire has burned through them more than once. Next we want to pilot the Miyawaki method on about one hectare. Parts of the land were cleared decades ago. Neighbouring farmland stays as it is.
 
 ## What is happening now {status=today}
 
@@ -94,7 +96,7 @@ Visits are possible by arrangement. [Email us](mailto:info@vitaminair.org?subjec
 
 ## Fund a forest plot {status=planned}
 
-Companies, schools and families can fund a plot of new native forest on cleared land here. We price by area, not by tree count, and you pay once.
+Companies, schools and families can fund a plot of new native forest on cleared land here. We price by area, not by tree count, and you pay once. VitaminAir holds the land freehold, which is how we can keep each plot as forest for 30 years.
 
 | Plot | Area | Saplings | Price (US$) |
 |---|---|---|---|
