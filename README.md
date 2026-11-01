@@ -12,6 +12,7 @@ Node.js 22 or newer (developed on 24) and npm.
 | `npm run dev` | Generate pages, start Vite on http://localhost:5173. Editing anything in `src/content`, `src/data`, `src/templates`, `src/lib` or `src/styles` regenerates and reloads |
 | `npm run build` | Type-check, generate HTML, Vite build, postbuild (sitemap, RSS, robots, redirects, legacy stubs). Output: `dist/` |
 | `npm run preview` | Serve `dist/` at http://localhost:4173 |
+| `npx wrangler dev` | Serve `dist/` the way Cloudflare does, at http://localhost:8787: with `_redirects`, `_headers`, the trailing-slash redirect and the 404 page. Run `npm run build` first |
 | `npm run check` | `tsc --noEmit` |
 | `npm run migrate` | One-off HTMLy converter (re-creates the migrated files from `source-archive/`) |
 
@@ -44,16 +45,16 @@ source-archive/         original HTMLy files (do not edit)
 proposal/               design proposal, build spec, prototype, screenshots
 ```
 
-## Hosting (static, no backend)
-Upload `dist/`. Every page is a directory with an `index.html` (`/rewilding/index.html`, `/blog/2024/08/slug/index.html`), so deep links work on any static host that serves directory indexes.
+## Hosting (Cloudflare, static, no backend)
+The site is a Cloudflare Worker with static assets only. There is no Worker script: `wrangler.jsonc` points Cloudflare at `dist/`. The Worker is connected to this GitHub repository (Workers Builds), and every push to `main` runs `npm run build` and then `npx wrangler deploy`. Pushing to `main` therefore publishes the site.
 
-- **Trailing slashes.** The canonical URLs end in `/`. A request without the slash (the live site's old style, `/blog/2024/08/vitaminair-and-carbon-credits`) must be redirected or served from the directory:
-  - **Netlify / Cloudflare Pages:** serve it automatically (Netlify "pretty URLs" on; Cloudflare Pages does by default).
-  - **GitHub Pages:** redirects `/dir` to `/dir/` automatically. No `_redirects` support there; the stub pages carry the legacy redirects.
-  - **nginx:** `location / { try_files $uri $uri/ =404; }` (nginx 301s `/dir` to `/dir/`). Use `error_page 404 /404.html;`.
-  - `vite preview` does not add the slash redirect; use the slash form when previewing.
-- **Legacy redirects.** `dist/_redirects` (Netlify syntax) gives real 301s. The same old URLs also exist as small meta-refresh + canonical stub pages, so hosts without `_redirects` (GitHub Pages, plain nginx or S3) still forward visitors.
-  - **Why the rules are forced.** Netlify serves an existing file before a normal redirect rule, so a stub at `/blog/about/index.html` would win over `/blog/about/ /village/ 301`. Every generated rule therefore uses `301!` (force), which makes Netlify send a real 301 and ignore the stub. The stubs stay as the fallback for other hosts.
-  - **Cloudflare Pages.** Redirects already take priority over static files there, and its parser does not document the `!` flag. If it rejects the lines, delete the `!` from `301!` in `scripts/postbuild.ts` and rebuild.
+- **Deploy by hand** (only if the Git connection is broken): `npx wrangler login`, then `npm run build && npx wrangler deploy`.
+- **Domain.** `vitaminair.org` is a Custom Domain on the Worker, added in the dashboard (Worker > Domains) and not in `wrangler.jsonc`. The domain's registration, its DNS and the email routing for `tree@vitaminair.org` are in the same Cloudflare account.
+- **Trailing slashes.** The canonical URLs end in `/`. Cloudflare redirects a request without the slash (the live site's old style, `/blog/2024/08/vitaminair-and-carbon-credits`) to the slash form. It serves `404.html` with a 404 status for unknown paths. Both are set under `assets` in `wrangler.jsonc`.
+- **Headers.** `public/_headers` lets browsers keep the hashed files in `/assets/` for a year, and it sends `Strict-Transport-Security` on every response.
+- **Analytics.** There is no analytics code in the repository. With Cloudflare Web Analytics on (automatic setup, in the dashboard), Cloudflare adds its beacon to each page as it serves it.
+- **Another host.** Upload `dist/`. Every page is a directory with an `index.html` (`/rewilding/index.html`, `/blog/2024/08/slug/index.html`), so deep links work on any static host that serves directory indexes. For nginx, use `location / { try_files $uri $uri/ =404; }` (nginx 301s `/dir` to `/dir/`) and `error_page 404 /404.html;`. `vite preview` doesn't add the slash redirect, so use the slash form when previewing with it.
+- **Legacy redirects.** `dist/_redirects`, written by `scripts/postbuild.ts`, sends real 301s for the old HTMLy URLs. Cloudflare applies it before it looks for a file, so the rules win over the meta-refresh stub pages at the same paths. The stubs (meta refresh plus canonical) forward visitors on hosts without `_redirects`, such as GitHub Pages or plain nginx.
+  - Cloudflare ignores Netlify's forced form `301!` (`wrangler dev` lists those lines as invalid), so the rules use plain `301`. On Netlify a stub would win over a plain rule, so add the `!` back there.
   - Feed readers do not follow meta refresh, so `/blog/feed/rss` only redirects properly where `_redirects` is supported.
 - The site needs no server code, database or API.

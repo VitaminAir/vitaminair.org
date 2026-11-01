@@ -1,6 +1,6 @@
 # Content guide
 
-Everything below needs a rebuild to show on the site: run `npm run build` and upload `dist/`. Use `npm run dev` to preview while editing.
+Everything below needs a rebuild to show on the site. Pushing to `main` does that: Cloudflare rebuilds and publishes the site. Use `npm run dev` to preview while editing.
 
 ## Change a fact
 Edit `src/data/site.ts`: `facts` (land figures, pilot size), `status` and `labels` (label wording), `site` (email, map link, socials, partners, nav). SmallWorld (parent) and KOOMPI, StadiumX (sister companies) are `site.parent` / `site.sisters`, plain names; add a `url` to link one. `{{facts.partners}}` prints the "Working with ..." line with links, and the footer shows it on every page. The land size appears once, in the Rewilding "At a glance" list, and should stay out of headings, descriptions and social previews. Tone for all copy is in `proposal/VOICE.md`. In Markdown, write `{{facts.landArea}}` (or `{{facts.landArea|lower}}` for "around 80 hectares") and the value is filled in at build time. Fact text written in plain prose is not updated automatically, so use the placeholder wherever a figure appears.

@@ -1,6 +1,7 @@
 node_modules
 dist
 .site
+.wrangler
 .playwright-mcp
 .DS_Store
 *.log
