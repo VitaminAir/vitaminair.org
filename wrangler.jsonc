@@ -1,0 +1,17 @@
+// Cloudflare Workers config. The site is static files only: there is no Worker script, so every request is
+// served from dist/ (with dist/_redirects and dist/_headers applied). Workers Builds runs `npm run build`
+// and then `npx wrangler deploy` on each push to main. See README.md > Hosting.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "vitaminair",
+  "compatibility_date": "2026-10-13",
+  "assets": {
+    "directory": "./dist",
+    // /rewilding redirects to /rewilding/, the canonical form.
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get dist/404.html with a 404 status.
+    "not_found_handling": "404-page"
+  }
+  // vitaminair.org is attached in the dashboard (Worker > Domains), not with "routes" here, so a deploy
+  // doesn't depend on the domain's DNS records.
+}
