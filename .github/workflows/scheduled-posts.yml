@@ -1,0 +1,37 @@
+# Journal posts dated in the future stay out of the build until their date (src/lib/content.ts).
+# Every morning in Phnom Penh this checks whether a published post is dated today and, if so,
+# calls the host's deploy hook so the site rebuilds and the post goes live. Days without a post
+# trigger nothing, so the footer's "SITE UPDATED" date only moves when something changed.
+# Needs the repository secret DEPLOY_HOOK: the URL of a deploy hook that rebuilds main.
+# Cloudflare: Workers & Pages > vitaminair > Settings > Builds > Deploy Hooks.
+# Vercel: Project Settings > Git > Deploy Hooks.
+name: Publish scheduled posts
+
+on:
+  schedule:
+    - cron: '15 2 * * *' # 09:15 in Phnom Penh (UTC+7); posts are dated 09:00
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: src/content/journal
+
+      - name: Find posts dated today
+        id: due
+        run: |
+          today=$(TZ=Asia/Phnom_Penh date +%F)
+          due=$(grep -l -E "^date: \"?$today" src/content/journal/*.md | xargs -r grep -l -E '^status: "?published' || true)
+          echo "Posts dated $today: ${due:-none}"
+          [ -n "$due" ] && echo "due=true" >> "$GITHUB_OUTPUT" || true
+
+      - name: Rebuild the site
+        if: steps.due.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          HOOK: ${{ secrets.DEPLOY_HOOK }}
+        run: |
+          [ -n "$HOOK" ] || { echo "::error::Add the DEPLOY_HOOK repository secret"; exit 1; }
+          curl -fsS -X POST "$HOOK"

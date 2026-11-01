@@ -1,12 +1,10 @@
 ---
 title: "Planting four layers for wildlife"
+date: "2026-11-10T09:00:00+07:00"
 description: "The land we look after lies between the Cardamoms and Bokor. We plan to plant 25 native species in four layers, with fruit trees that feed animals all year."
-date: 2026-10-29
-stage:
-  scene: Canopy
-  label: true
+type: "update"
+status: "published"
 tags: [biodiversity, wildlife, botany, corridor]
-draft: false
 ---
 
 The land we look after in Kampong Seila is in a valley between two of Cambodia's largest protected forests. To the north are the ridges of the Southern Cardamom Mountains. To the south is the plateau forest of Preah Monivong Bokor National Park. Over the last few decades, national highways, cassava farms and private rubber plantations have cut the valley into pieces. Animals moving between the two parks now have to cross open fields and busy roads, where they meet traffic and hunters.

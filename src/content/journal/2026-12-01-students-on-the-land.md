@@ -1,12 +1,10 @@
 ---
 title: "Students on the land"
+date: "2026-12-01T09:00:00+07:00"
 description: "Students who visit Kampong Seila mix potting soil, raise native seedlings, learn the trees on the hill and see what rain does to bare ground."
-date: 2026-10-30
-stage:
-  scene: Village
-  label: true
+type: "article"
+status: "published"
 tags: [education, youth, forestry, cambodia, stewardship]
-draft: false
 ---
 
 Most Cambodian students learn about forests from textbooks. In class they memorise plant names, copy water-cycle diagrams from the board and read about conservation policy. School rarely lets them put their hands in forest soil or watch a valley recover. Students who come to Kampong Seila, from farming villages or from the city, get to do that. Here, forestry means planting, looking after the soil and repairing the forest.

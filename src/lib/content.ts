@@ -56,7 +56,8 @@ function isoOf(v: unknown, file: string): string {
   return v as string;
 }
 
-export function loadJournal(showDrafts = false): Article[] {
+/** `now` (ms): published posts dated after it are scheduled and stay out of the build until then. */
+export function loadJournal(showDrafts = false, now = Date.now()): Article[] {
   const dir = join(ROOT, 'src/content/journal');
   const files = readdirSync(dir).filter((f) => f.endsWith('.md') && !f.startsWith('_'));
   const out: Article[] = [];
@@ -73,6 +74,7 @@ export function loadJournal(showDrafts = false): Article[] {
     if (!data.description || typeof data.description !== 'string') fail(file, 'missing "description"');
     if (data.image && !data.imageAlt) fail(file, 'an "image" needs an "imageAlt"');
     if (data.status === 'draft' && !showDrafts) continue;
+    if (time > now && !showDrafts) continue;
 
     const { y, m } = dateParts(date);
     const slug = f.replace(/\.md$/, '').replace(/^\d{4}-\d{2}-\d{2}-/, '');

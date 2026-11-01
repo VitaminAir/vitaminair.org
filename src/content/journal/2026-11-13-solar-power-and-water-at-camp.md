@@ -1,12 +1,10 @@
 ---
 title: "Solar power and water at camp"
+date: "2026-11-13T09:00:00+07:00"
 description: "There is no grid at our camp in Kampong Seila. How a small solar setup, a DC pump in the stream and tanks on the ridge give us light and water."
-date: 2026-10-30
-stage:
-  scene: Land
-  label: true
+type: "article"
+status: "published"
 tags: [solar, water, offgrid, engineering, permaculture]
-draft: false
 ---
 
 No power lines run from the highway to our base camp in Kampong Seila. Power and water are things we wire, pipe and balance ourselves, and we count every watt and every litre against the weather. Light at night, charging laptops and watering the nursery all depend on what we get from the sun and the stream in the valley.

@@ -23,7 +23,7 @@ export function generate(): Manifest {
   const now = new Date();
   const build = { buildDate: buildDateLabel(now) };
 
-  const journal = loadJournal(showDrafts);
+  const journal = loadJournal(showDrafts, now.getTime());
   rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
 

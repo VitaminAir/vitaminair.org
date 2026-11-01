@@ -1,12 +1,10 @@
 ---
 title: "Growing food at camp"
+date: "2026-11-24T09:00:00+07:00"
 description: "At base camp, lunch comes from beds a few steps from the kitchen. How we built up the red clay with biochar, manure and straw, and what we grow."
-date: 2026-10-30
-stage:
-  scene: Village
-  label: true
+type: "article"
+status: "published"
 tags: [farming, permaculture, food, cambodia, community]
-draft: false
 ---
 
 A morning of digging planting pits, carrying water buckets uphill and moving seedling trays in the Kampong Seila heat leaves everyone hungry by noon. At base camp, lunch does not come from the market. The kitchen crew walks 20 metres out the back door with scissors and a woven basket and picks morning glory, holy basil, long beans and chillies, still wet from the morning mist.
